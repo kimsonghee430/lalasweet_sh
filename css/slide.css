@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.wrap{
+    width: 100%;
+    /* max-width: 1300px; */
+    /* background-color: aquamarine; */
+    margin: auto;
+}
+.slide-area{
+    padding-top: 3%;
+    visibility: hidden; /* 초기 상태에서 숨김 */
+  opacity: 0; /* 완전히 보이지 않도록 */
+  transition: visibility 0s 4s, opacity 4s ease-in-out; /* 5초 후에 천천히 나타나도록 전환 설정 */
+}
+/* .slide-area{
+    width: 100%;
+    max-width: 1300px;
+} */
+    /* height: 200px;
+    overflow: hidden; */
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+/* .swiper-pagination{
+    z-index: 999;
+} */
+
+/* .slide-area a{
+    width: 180px;
+    height: auto;
+    background-color: azure;
+} */
+
+.slide-area a img{
+    width: 180px;
+    height: auto;
+}
+
+.swPromotion{
+    width: 100%;
+    /* max-width: 800px; */
+    height: auto;
+    position: relative;
+    /* background-color: blueviolet; */
+    
+}
+
+
+
+.swPromotion .swiper-slide a img{
+    width: 100%;
+    /* height: 300px; */
+}
+
+/* .swPromotion .swiper-slide a{
+    padding: 40%;
+} */
+
+.swiper-button-next{
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    z-index: 99999;
+    color: aliceblue;
+}
+.swiper-button-prev{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    z-index: 99999;
+    color: aliceblue;
+}
