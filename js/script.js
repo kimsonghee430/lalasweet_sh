@@ -4,7 +4,13 @@ window.onload = function (){
       const slideContainer = document.querySelector(".slide-area");
       slideContainer.style.visibility = "visible";
       slideContainer.style.opacity = "1";
-    }, 500); // 5000ms = 5초
+      slideContainer.style.transition = "opacity 0.4s ease"
+    }, 4200); // 5000ms = 5초
+
+    setTimeout(function () {
+      const image = document.querySelector(".character"); // 이미지의 클래스명을 지정
+      image.style.display = "none";
+    }, 4000); // 5000ms = 5초
 
     const swPromotion = new Swiper(".swPromotion", {
         loop: false,
@@ -25,7 +31,7 @@ window.onload = function (){
           slidesPerView: 2,
       },
       // 화면 너비가 768px 이상일 때
-      768: {
+      730: {
           slidesPerView: 3,
       },
       900: {
