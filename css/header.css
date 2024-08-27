@@ -88,7 +88,7 @@ body{
     
         30% {
         opacity: 1;
-        transform: translateX(100%) translateY(190%);
+        transform: translateX(100%) translateY(200%);
         }
         /* 30% {
           opacity: 1;
@@ -285,13 +285,16 @@ body{
   /* right: -200px;
   bottom: -487px; */
   /* bottom: 10%; */
-  transform: translate(-1%, 15%);
+  /* transform: translate(-1%, 15%); */
+  transform: translate(56%, 15%)
+  
 
 }
 
 .character-in-cup2{
   scale: 17%;
-  transform: translate(-1%, 17%);
+  /* transform: translate(-1%, 17%); */
+  transform: translate(67%, 17%);
   /* right: -292px;
   bottom: -840px; */
 }
