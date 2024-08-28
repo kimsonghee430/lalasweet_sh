@@ -63,6 +63,7 @@ window.onload = function () {
   const swProduct = new Swiper(".swProduct", {
     loop: true,
     slidesPerView: 2,
+    centeredSlides: true,
     direction: "vertical",
     autoplay: { delay: 1 },
     speed: 5000,
