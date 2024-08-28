@@ -24,7 +24,14 @@
     font-weight: bold;
     color: aliceblue;
     margin: 4% 0;
-    font-family: url("/font/CherryBombOne-Regular.ttf");
+    /* background: white; */
+    /* font-family: "Matemasie", sans-serif; */
+    /* font-family: "CherryBombOne", sans-serif; */
+}
+
+@font-face {
+    font-family: "CherryBombOne";
+    src: url("/font/CherryBombOne-Regular.ttf") format("truetype");
 }
 
 
@@ -75,7 +82,8 @@
     border-radius: 25px;
     display: flex;
 }
-.pint{
+
+.product-list{
     width: 100%;
     height: 100%;
     display: flex;
@@ -84,13 +92,25 @@
     /* margin: 0 auto; */
 }
 
-.pint .textbox{
+.textbox{
     width: 35%;
-    font-size: 20px;
-
+    /* font-size: 20px; */
 }
 
-.pint_img01{
+.textbox h3{
+    font-size: 5rem;
+}
+.textbox p{
+    font-size: 3rem;
+}
+
+
+.pint, .chocobar, .melonbar, .sand{
+    display: none;
+}
+
+
+.img01{
     /* float: right; */
     /* display: block; */
     display: none;
@@ -98,7 +118,7 @@
     /* border: 10px solid cornflowerblue; */
     border-radius: 25px;
 }
-.pint_img02{
+.img02{
     display: block;
     /* display: none; */
     width: 55%;
