@@ -12,6 +12,7 @@ window.onload = function () {
     image.style.display = "none";
   }, 4000); // 5000ms = 5초
 
+  // ===메인 배너 스와이퍼 슬라이드 영역 시작
   const swPromotion = new Swiper(".swPromotion", {
     loop: false,
     autoplay: { delay: 0 },
@@ -59,7 +60,9 @@ window.onload = function () {
       clickable: true,
     },
   });
+  // ===메인 배너 슬라이드 영역 끝
 
+  // ===프로덕트 슬라이드 영역 시작
   const swProduct = new Swiper(".swProduct", {
     loop: true,
     slidesPerView: 2,
@@ -98,4 +101,84 @@ window.onload = function () {
       },
     },
   });
+
+  // ===프로덕트 슬라이드 영역 끝
+
+  //==프로덕트 슬라이드 클릭시 제품 나오는 코드
+// 제품 클릭 시 설명 표시
+const descriptions = document.querySelectorAll(".product-list"); // 모든 설명란 요소 선택
+
+const pintClick = document.querySelector(".click_pint");
+const pintDesc = document.querySelector(".pint");
+
+pintClick.addEventListener("click", function(e){
+    e.preventDefault()
+    descriptions.forEach(desc => desc.style.display = "none"); // 모든 설명란 숨기기
+    pintDesc.style.display = "flex"; // 클릭된 설명란만 표시
+});
+
+const chocobarClick = document.querySelector(".click_chocobar");
+const chocobarDesc = document.querySelector(".chocobar");
+
+chocobarClick.addEventListener("click", function(e){
+    e.preventDefault()
+    descriptions.forEach(desc => desc.style.display = "none"); // 모든 설명란 숨기기
+    chocobarDesc.style.display = "flex"; // 클릭된 설명란만 표시
+});
+
+const melonbarClick = document.querySelector(".click_melonbar");
+const melonbarDesc = document.querySelector(".melonbar");
+
+melonbarClick.addEventListener("click", function(e){
+    e.preventDefault()
+    descriptions.forEach(desc => desc.style.display = "none"); // 모든 설명란 숨기기
+    melonbarDesc.style.display = "flex"; // 클릭된 설명란만 표시
+});
+
+const sandClick = document.querySelector(".click_sand");
+const sandDesc = document.querySelector(".sand");
+
+sandClick.addEventListener("click", function(e){
+    e.preventDefault()
+    descriptions.forEach(desc => desc.style.display = "none"); // 모든 설명란 숨기기
+    sandDesc.style.display = "flex"; // 클릭된 설명란만 표시
+});
+
+const monakaClick = document.querySelector(".click_monaka");
+const monakaDesc = document.querySelector(".monaka");
+
+monakaClick.addEventListener("click", function(e){
+    e.preventDefault()
+    descriptions.forEach(desc => desc.style.display = "none"); // 모든 설명란 숨기기
+    monakaDesc.style.display = "flex"; // 클릭된 설명란만 표시
+});
+
+const shakeClick = document.querySelector(".click_shake");
+const shakeDesc = document.querySelector(".shake");
+
+shakeClick.addEventListener("click", function(e){
+    e.preventDefault()
+    descriptions.forEach(desc => desc.style.display = "none"); // 모든 설명란 숨기기
+    shakeDesc.style.display = "flex"; // 클릭된 설명란만 표시
+});
+const coffeeClick = document.querySelector(".click_coffee");
+const coffeeDesc = document.querySelector(".coffee");
+
+coffeeClick.addEventListener("click", function(e){
+    e.preventDefault()
+    descriptions.forEach(desc => desc.style.display = "none"); // 모든 설명란 숨기기
+    coffeeDesc.style.display = "flex"; // 클릭된 설명란만 표시
+});
+const milkClick = document.querySelector(".click_milk");
+const milkDesc = document.querySelector(".milk");
+
+milkClick.addEventListener("click", function(e){
+    e.preventDefault()
+    descriptions.forEach(desc => desc.style.display = "none"); // 모든 설명란 숨기기
+    milkDesc.style.display = "flex"; // 클릭된 설명란만 표시
+});
 };
+
+//========슬라이드 클릭 제품 설명 영역 끝
+
+
