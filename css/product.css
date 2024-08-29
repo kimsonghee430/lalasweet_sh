@@ -99,15 +99,21 @@
 }
 
 .textbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
     width: 35%;
     /* font-size: 20px; */
 }
 
 .textbox h3{
     font-size: 5rem;
+    margin: 5%;
 }
 .textbox p{
-    font-size: 3rem;
+    /* font-weight: bold; */
+    font-size: 2.4rem;
 }
 
 .decription{
@@ -127,16 +133,17 @@
     border-radius: 8px;
     border: none;
     background-color: cornflowerblue;
-    margin: 10px;
+    margin: 4% auto;
     font-size: 1.6rem;
     font-weight: bold;
     color: aliceblue;
     cursor: pointer;
+    text-align: center;
 
 }
 
-.product-list .textbox > button:nth-child(2){
-    background-color: pink;
+.product-list .textbox .buyB {
+    background-color: rgb(231, 40, 72) ;
 }
 
 .img01{
