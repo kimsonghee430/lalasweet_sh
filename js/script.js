@@ -181,4 +181,17 @@ milkClick.addEventListener("click", function(e){
 
 //========슬라이드 클릭 제품 설명 영역 끝
 
+//======flavor 버튼
 
+const menu_pintB = querySelector(".menu-pint")
+const menu_chocobarB = querySelector(".menu-pint")
+const menu_sandB = querySelector(".menu-sand")
+const menu_monakaB = querySelector(".menu-monaka")
+const menu_shakeB = querySelector(".menu-shake")
+const menu_coffeeB = querySelector(".menu-coffee")
+
+
+menu_pintB.addEventListener("click", function(){
+  //  $(".img01").style.display = "none"
+  //  $(".img02").style.display = "block"
+})
