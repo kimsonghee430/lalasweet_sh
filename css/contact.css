@@ -1,40 +1,48 @@
 @charset "utf-8";
 .contact {
   width: 100%;
-  height: 100%;
-}
-.contact h2 {
-  text-align: center;
-  font-size: 8rem;
-  font-weight: bold;
-  color: aliceblue;
-  margin: 4% 0;
-}
-.contact_box {
+  max-width: 1300px;
+  height: 40%;
+  background-color: #ff8d8d;
   display: flex;
-  justify-content: space-evenly;
-  font-size: 2rem;
-  color: #fff;
-  text-align: center;
-  font-weight: 600;
+  justify-content: space-around;
 }
-
-/* 하단 푸터부분 */
-.footer-intro {
+.footer {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  height: 30%;
+  margin-top: 10px;
+  background-color: #ff8d8d;
+  border: 5px solid rgb(255, 255, 255);
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 2);
+  margin-top: 10px;
+  padding: 10 10px;
+}
+.footer-left img {
+  padding: 10px 30px;
+  margin-bottom: 10px;
+}
+.footer-right {
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  margin-top: 10px;
 }
-.footer_sns img {
-  width: 50%;
-  height: 50%;
+.footer-right img {
+  width: 10%;
+  height: 10%;
+  float: left;
 }
-/* 이용약관부분 */
-.intro{
-  font-family: "Jua", sans-serif;
-  font-style:normal;
+.footer-icon img{
+  width: 40%;
+  height: 40%;
+  display: flex;
+  /* transform: translate(50%,50%); */
 }
-/* 지도부분 */
-
