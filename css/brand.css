@@ -33,3 +33,77 @@
   font-style: normal;
   font-size: 2rem;
 }
+/* 반응형 */
+@media screen and (max-width: 1110px){
+
+}
+@media screen and (max-width: 900px){
+  .brand {
+    /* padding: 20%; */
+    width: 100%;
+    height: 100%;
+    background: url(../images/brand/produce.jpg) no-repeat center;
+    margin: 8% auto;
+    background-size: cover;
+  }
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .brand-intro img {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    translate: 40%;
+  }
+  .brand-intro ul li p {
+    color: rgb(112, 112, 112);
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .brand-intro ul li {
+    color: beige;
+    translate: 10%;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 700px){
+  .brand {
+    /* padding: 20%; */
+    width: 100%;
+    height: 100%;
+    background: url(../images/brand/produce.jpg) no-repeat center;
+    margin: 8% auto;
+    background-size: cover;
+  }
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .brand-intro img {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    translate: 40%;
+  }
+  .brand-intro ul li p {
+    color: rgb(112, 112, 112);
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .brand-intro ul li {
+    color: beige;
+    translate: 10%;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+  }
+}
