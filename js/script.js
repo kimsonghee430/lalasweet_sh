@@ -80,6 +80,10 @@ window.onload = function () {
       480: {
         slidesPerView: 2,
       },
+      // 678: {
+      //   slidesPerView: 2,
+      //   direction: "horizontal"
+      // },
       // 화면 너비가 768px 이상일 때
       730: {
         slidesPerView: 2,
