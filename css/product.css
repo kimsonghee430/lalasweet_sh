@@ -7,7 +7,8 @@
 }
 .swProduct {
     width: 25%;
-    height: 600px; /* 필요에 따라 컨테이너 높이 설정 */
+    max-width: 230px;
+    height: 600px;
     border: 15px solid aliceblue;
     border-radius: 15px;
     
@@ -40,7 +41,9 @@
     max-height: 200px; /* 필요에 따라 최대 높이 설정 */
     max-width: 200px; /* 필요에 따라 최대 높이 설정 */
     box-sizing: border-box; /* 패딩 포함 계산 */
-    margin: 15% auto;
+    margin: 16% auto;
+    /* margin: 55px auto; */
+
    
   }
 .product-slide a{
@@ -77,13 +80,16 @@
 /* 설명란 */
 .decription{
     width: 60%;
-    height: 600px;
+    min-height: 600px;
+    padding: 3%;
     background-color: aliceblue;
     border-radius: 25px;
     display: flex;
 }
 
 .product-dec-area{
+    width: 100%;
+    width: 100%;
     transition: all 0.5s;
 }
 
@@ -94,6 +100,7 @@
     justify-content: space-around;
     align-items: center;
     transition: all 0.5s;
+    /* background-color: beige; */
     
     /* margin: 0 auto; */
 }
@@ -103,7 +110,7 @@
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    width: 35%;
+    /* width: 35%; */
     /* font-size: 20px; */
 }
 
@@ -161,4 +168,43 @@
     /* float: right; */
     border: 15px solid #fff;
     border-radius: 25px;
+}
+
+@media screen and (max-width: 1345px) {
+    .swProduct .swiper-slide {
+        height: auto; /* 자동 높이로 설정 */
+        max-height: 200px; /* 필요에 따라 최대 높이 설정 */
+        max-width: 200px; /* 필요에 따라 최대 높이 설정 */
+        box-sizing: border-box; /* 패딩 포함 계산 */
+        margin: 18% auto;
+    }
+  }
+
+
+
+
+@media screen and (max-width: 1200px) {
+    /* html{
+        font-size: 8px;
+    } */
+    .textbox p{
+        font-size: 20px;
+    }
+  }
+@media screen and (max-width: 1000px) {
+    .product-list{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .textbox h3 {
+        font-size: 4rem;
+        margin: 2%;
+  }
+  .product-list .textbox > button{
+    margin: 2% auto;
+  }
+
+  .textbox p{
+    font-size: 18px;
+}
 }
