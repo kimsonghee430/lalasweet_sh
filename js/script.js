@@ -109,93 +109,94 @@ window.onload = function () {
   // ===프로덕트 슬라이드 영역 끝
 
   //==프로덕트 슬라이드 클릭시 제품 나오는 코드
-// 제품 클릭 시 설명 표시
-const descriptions = document.querySelectorAll(".product-list"); // 모든 설명란 요소 선택
+  // 제품 클릭 시 설명 표시
+  const descriptions = document.querySelectorAll(".product-list"); // 모든 설명란 요소 선택
 
-const pintClick = document.querySelector(".click_pint");
-const pintDesc = document.querySelector(".pint");
+  const pintClick = document.querySelector(".click_pint");
+  const pintDesc = document.querySelector(".pint");
 
-pintClick.addEventListener("click", function(e){
-    e.preventDefault()
-    descriptions.forEach(desc => desc.style.display = "none"); // 모든 설명란 숨기기
+  pintClick.addEventListener("click", function (e) {
+    e.preventDefault();
+    descriptions.forEach((desc) => (desc.style.display = "none")); // 모든 설명란 숨기기
     pintDesc.style.display = "flex"; // 클릭된 설명란만 표시
-});
+  });
 
-const chocobarClick = document.querySelector(".click_chocobar");
-const chocobarDesc = document.querySelector(".chocobar");
+  const chocobarClick = document.querySelector(".click_chocobar");
+  const chocobarDesc = document.querySelector(".chocobar");
 
-chocobarClick.addEventListener("click", function(e){
-    e.preventDefault()
-    descriptions.forEach(desc => desc.style.display = "none"); // 모든 설명란 숨기기
+  chocobarClick.addEventListener("click", function (e) {
+    e.preventDefault();
+    descriptions.forEach((desc) => (desc.style.display = "none")); // 모든 설명란 숨기기
     chocobarDesc.style.display = "flex"; // 클릭된 설명란만 표시
-});
+  });
 
-const melonbarClick = document.querySelector(".click_melonbar");
-const melonbarDesc = document.querySelector(".melonbar");
+  const melonbarClick = document.querySelector(".click_melonbar");
+  const melonbarDesc = document.querySelector(".melonbar");
 
-melonbarClick.addEventListener("click", function(e){
-    e.preventDefault()
-    descriptions.forEach(desc => desc.style.display = "none"); // 모든 설명란 숨기기
+  melonbarClick.addEventListener("click", function (e) {
+    e.preventDefault();
+    descriptions.forEach((desc) => (desc.style.display = "none")); // 모든 설명란 숨기기
     melonbarDesc.style.display = "flex"; // 클릭된 설명란만 표시
-});
+  });
 
-const sandClick = document.querySelector(".click_sand");
-const sandDesc = document.querySelector(".sand");
+  const sandClick = document.querySelector(".click_sand");
+  const sandDesc = document.querySelector(".sand");
 
-sandClick.addEventListener("click", function(e){
-    e.preventDefault()
-    descriptions.forEach(desc => desc.style.display = "none"); // 모든 설명란 숨기기
+  sandClick.addEventListener("click", function (e) {
+    e.preventDefault();
+    descriptions.forEach((desc) => (desc.style.display = "none")); // 모든 설명란 숨기기
     sandDesc.style.display = "flex"; // 클릭된 설명란만 표시
-});
+  });
 
-const monakaClick = document.querySelector(".click_monaka");
-const monakaDesc = document.querySelector(".monaka");
+  const monakaClick = document.querySelector(".click_monaka");
+  const monakaDesc = document.querySelector(".monaka");
 
-monakaClick.addEventListener("click", function(e){
-    e.preventDefault()
-    descriptions.forEach(desc => desc.style.display = "none"); // 모든 설명란 숨기기
+  monakaClick.addEventListener("click", function (e) {
+    e.preventDefault();
+    descriptions.forEach((desc) => (desc.style.display = "none")); // 모든 설명란 숨기기
     monakaDesc.style.display = "flex"; // 클릭된 설명란만 표시
-});
+  });
 
-const shakeClick = document.querySelector(".click_shake");
-const shakeDesc = document.querySelector(".shake");
+  const shakeClick = document.querySelector(".click_shake");
+  const shakeDesc = document.querySelector(".shake");
 
-shakeClick.addEventListener("click", function(e){
-    e.preventDefault()
-    descriptions.forEach(desc => desc.style.display = "none"); // 모든 설명란 숨기기
+  shakeClick.addEventListener("click", function (e) {
+    e.preventDefault();
+    descriptions.forEach((desc) => (desc.style.display = "none")); // 모든 설명란 숨기기
     shakeDesc.style.display = "flex"; // 클릭된 설명란만 표시
-});
-const coffeeClick = document.querySelector(".click_coffee");
-const coffeeDesc = document.querySelector(".coffee");
+  });
+  const coffeeClick = document.querySelector(".click_coffee");
+  const coffeeDesc = document.querySelector(".coffee");
 
-coffeeClick.addEventListener("click", function(e){
-    e.preventDefault()
-    descriptions.forEach(desc => desc.style.display = "none"); // 모든 설명란 숨기기
+  coffeeClick.addEventListener("click", function (e) {
+    e.preventDefault();
+    descriptions.forEach((desc) => (desc.style.display = "none")); // 모든 설명란 숨기기
     coffeeDesc.style.display = "flex"; // 클릭된 설명란만 표시
-});
-const milkClick = document.querySelector(".click_milk");
-const milkDesc = document.querySelector(".milk");
+  });
+  const milkClick = document.querySelector(".click_milk");
+  const milkDesc = document.querySelector(".milk");
 
-milkClick.addEventListener("click", function(e){
-    e.preventDefault()
-    descriptions.forEach(desc => desc.style.display = "none"); // 모든 설명란 숨기기
+  milkClick.addEventListener("click", function (e) {
+    e.preventDefault();
+    descriptions.forEach((desc) => (desc.style.display = "none")); // 모든 설명란 숨기기
     milkDesc.style.display = "flex"; // 클릭된 설명란만 표시
-});
+  });
+
+
 };
 
 //========슬라이드 클릭 제품 설명 영역 끝
 
 //======flavor 버튼
 
-const menu_pintB = querySelector(".menu-pint")
-const menu_chocobarB = querySelector(".menu-pint")
-const menu_sandB = querySelector(".menu-sand")
-const menu_monakaB = querySelector(".menu-monaka")
-const menu_shakeB = querySelector(".menu-shake")
-const menu_coffeeB = querySelector(".menu-coffee")
+const menu_pintB = querySelector(".menu-pint");
+const menu_chocobarB = querySelector(".menu-pint");
+const menu_sandB = querySelector(".menu-sand");
+const menu_monakaB = querySelector(".menu-monaka");
+const menu_shakeB = querySelector(".menu-shake");
+const menu_coffeeB = querySelector(".menu-coffee");
 
-
-menu_pintB.addEventListener("click", function(){
+menu_pintB.addEventListener("click", function () {
   //  $(".img01").style.display = "none"
   //  $(".img02").style.display = "block"
-})
+});
