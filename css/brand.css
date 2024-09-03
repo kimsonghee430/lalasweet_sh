@@ -318,17 +318,267 @@
 
 /* 반응형(브랜드 소개영역) */
 @media screen and (max-width: 1110px) {
+  .brand {
+    /* padding: 20%; */
+    width: 100%;
+    height: 300px;
+    max-width: 1300px;
+    height: 100%;
+    background: url(../images/brand/produce.jpg) no-repeat right;
+    background-size: cover;
+    margin: 8% auto;
+    border-radius: 25px;
+  }
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .brand-intro p{
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 3.5rem;
+    color: rgb(235, 167, 167);
+    padding-top: 30px;
+  }
+  .brand-intro span{
+    width: 100%;
+    height: 200px;
+    color: beige;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 3rem;
+  }
   
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) { 
+  .brand {
+    width: 80%;
+    height: 1000px;
+    background: url(../images/brand/produce_mb2.jpg) no-repeat bottom right;
+    background-size: cover;
+    margin: 8% auto;
+    border-radius: 25px;
+  }
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .brand-intro p{
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 3.5rem;
+    color: rgb(235, 167, 167);
+    padding-top: 30px;
+  }
+  .brand-intro span{
+    width: 100%;
+    height: 200px;
+    color: beige;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 3rem;
+  }
   
 }
 @media screen and (max-width: 700px) {
+  .brand {
+    width: 80%;
+    height: 1000px;
+    background: url(../images/brand/produce_mobi.jpg) no-repeat bottom right;
+    background-size: cover;
+    margin: 8% auto;
+    border-radius: 25px;
+  }
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .brand-intro p{
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 3.3rem;
+    color: rgb(235, 167, 167);
+    padding-top: 30px;
+  }
+  .brand-intro span{
+    width: 100%;
+    height: 200px;
+    color: beige;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 2.7rem;
+  }
   
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 610px) {
+  .brand {
+    width: 80%;
+    height: 950px;
+    background: url(../images/brand/produce_mobi.jpg) no-repeat right;
+    background-size: cover;
+    border-radius: 25px;
+  }
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px 0px; */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .brand-intro p{
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 3.3rem;
+    color: rgb(235, 167, 167);
+    padding-top: 30px;
+  }
+  .brand-intro span{
+    width: 100%;
+    height: 170px;
+    color: beige;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 2.6rem;
+  }
+}
+@media screen and (max-width: 586px) {
+  .brand {
+    width: 80%;
+    height: 850px;
+    background: url(../images/brand/produce_mobi.jpg) no-repeat right;
+    background-size: cover;
+    border-radius: 25px;
+  }
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .brand-intro p{
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 2.7rem;
+    color: rgb(235, 167, 167);
+    padding-top: 30px;
+  }
+  .brand-intro span{
+    width: 100%;
+    height: 200px;
+    color: beige;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .brand {
+    width: 80%;
+    height: 900px;
+    background: url(../images/brand/produce_mobi.jpg) no-repeat right;
+    background-size: cover;
+    border-radius: 25px;
+  }
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .brand-intro p{
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: rgb(235, 167, 167);
+    padding-top: 30px;
+  }
+  .brand-intro span{
+    width: 100%;
+    height: 180px;
+    color: beige;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 1.9rem;
+  }
+  
+}
+@media screen and (max-width: 437px) {
+  .brand {
+    width: 80%;
+    height: 850px;
+    background: url(../images/brand/produce_mobi.jpg) no-repeat right;
+    background-size: cover;
+    border-radius: 25px;
+  }
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .brand-intro p{
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 2.3rem;
+    color: rgb(235, 167, 167);
+    padding-top: 30px;
+  }
+  .brand-intro span{
+    width: 100%;
+    height: 180px;
+    color: beige;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 1.8rem;
+  }
+  
 }
 @media screen and (max-width: 320px) {
+  .brand {
+    width: 80%;
+    height: 850px;
+    background: url(../images/brand/produce_mobi.jpg) no-repeat right;
+    background-size: cover;
+    border-radius: 25px;
+  }
+  .brand-intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .brand-intro p{
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 2.3rem;
+    color: rgb(235, 167, 167);
+    padding-top: 30px;
+  }
+  .brand-intro span{
+    width: 100%;
+    height: 180px;
+    color: beige;
+    font-family: "Jua", sans-serif;
+    font-style: normal;
+    font-size: 1.8rem;
+  }
 }
 
 
