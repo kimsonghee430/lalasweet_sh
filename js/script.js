@@ -75,16 +75,17 @@ window.onload = function () {
       // 화면 너비가 320px 이상일 때
       320: {
         slidesPerView: 2,
+        direction: "horizontal"
       },
       // 화면 너비가 480px 이상일 때
       480: {
         slidesPerView: 2,
+        direction: "horizontal"
       },
-      // 678: {
-      //   slidesPerView: 2,
-      //   direction: "horizontal"
-      // },
-      // 화면 너비가 768px 이상일 때
+      700: {
+        slidesPerView: 2,
+        direction: "vertical",
+      },
       730: {
         slidesPerView: 2,
       },
@@ -105,6 +106,8 @@ window.onload = function () {
       },
     },
   });
+
+
 
   // ===프로덕트 슬라이드 영역 끝
 
