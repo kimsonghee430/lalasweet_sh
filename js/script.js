@@ -74,13 +74,17 @@ window.onload = function () {
     breakpoints: {
       // 화면 너비가 320px 이상일 때
       320: {
-        slidesPerView: 2,
-        direction: "horizontal"
+        slidesPerView: 4,
+        direction: "horizontal",
+        centeredSlides: false,  // horizontal에서는 슬라이드를 가운데 정렬하지 않음
+        spaceBetween: 10,       // 슬라이드 간의 간격을 설정
       },
       // 화면 너비가 480px 이상일 때
       480: {
-        slidesPerView: 2,
-        direction: "horizontal"
+        slidesPerView: 4,
+        direction: "horizontal",
+        centeredSlides: false,
+        spaceBetween: 15,       // 적절한 간격으로 설정
       },
       700: {
         slidesPerView: 2,

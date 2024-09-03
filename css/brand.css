@@ -388,7 +388,8 @@
 @media screen and (max-width: 700px) {
   .brand {
     width: 80%;
-    height: 1000px;
+    /* height: 1000px; */
+    height: 800px;
     background: url(../images/brand/produce_mobi.jpg) no-repeat bottom right;
     background-size: cover;
     margin: 8% auto;
@@ -421,7 +422,7 @@
 @media screen and (max-width: 610px) {
   .brand {
     width: 80%;
-    height: 950px;
+    /* height: 950px; */
     background: url(../images/brand/produce_mobi.jpg) no-repeat right;
     background-size: cover;
     border-radius: 25px;
@@ -469,9 +470,10 @@
   .brand-intro p {
     font-family: "Jua", sans-serif;
     font-style: normal;
-    font-size: 2.7rem;
+    /* font-size: 2.7rem; */
     color: rgb(235, 167, 167);
     padding-top: 30px;
+    word-break: keep-all;
   }
   .brand-intro span {
     width: 100%;
@@ -479,7 +481,11 @@
     color: beige;
     font-family: "Jua", sans-serif;
     font-style: normal;
-    font-size: 2rem;
+    word-break: keep-all;
+    /* font-size: 2rem; */
+  }
+  .brand-intro br{
+    display: none;
   }
 }
 @media screen and (max-width: 460px) {
@@ -500,7 +506,7 @@
   .brand-intro p {
     font-family: "Jua", sans-serif;
     font-style: normal;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: rgb(235, 167, 167);
     padding-top: 30px;
   }
@@ -510,7 +516,7 @@
     color: beige;
     font-family: "Jua", sans-serif;
     font-style: normal;
-    font-size: 1.9rem;
+    font-size: 2.4rem;
   }
 }
 @media screen and (max-width: 437px) {
@@ -518,6 +524,7 @@
     width: 80%;
     height: 850px;
     background: url(../images/brand/produce_mobi.jpg) no-repeat right;
+    background-position: right center;
     background-size: cover;
     border-radius: 25px;
   }
@@ -531,7 +538,7 @@
   .brand-intro p {
     font-family: "Jua", sans-serif;
     font-style: normal;
-    font-size: 2.3rem;
+    font-size: 3rem;
     color: rgb(235, 167, 167);
     padding-top: 30px;
   }
@@ -541,7 +548,7 @@
     color: beige;
     font-family: "Jua", sans-serif;
     font-style: normal;
-    font-size: 1.8rem;
+    font-size: 2.1rem;
   }
 }
 @media screen and (max-width: 320px) {
