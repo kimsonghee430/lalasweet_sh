@@ -65,7 +65,7 @@ window.onload = function () {
   // ===프로덕트 슬라이드 영역 시작
   const swProduct = new Swiper(".swProduct", {
     loop: true,
-    slidesPerView: 2,
+    slidesPerView: 1,
     centeredSlides: true,
     direction: "vertical",
     autoplay: { delay: 1 },
@@ -74,14 +74,14 @@ window.onload = function () {
     breakpoints: {
       // 화면 너비가 320px 이상일 때
       320: {
-        slidesPerView: 4,
+        slidesPerView: 2,
         direction: "horizontal",
         centeredSlides: false,  // horizontal에서는 슬라이드를 가운데 정렬하지 않음
         spaceBetween: 10,       // 슬라이드 간의 간격을 설정
       },
       // 화면 너비가 480px 이상일 때
       480: {
-        slidesPerView: 4,
+        slidesPerView: 2,
         direction: "horizontal",
         centeredSlides: false,
         spaceBetween: 15,       // 적절한 간격으로 설정
@@ -190,20 +190,47 @@ window.onload = function () {
   });
 
 
+  const flavorButtons = document.querySelectorAll('.menu-flavor');
+
+  flavorButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      // 버튼이 속한 .product-list 요소 찾기
+      const productList = button.closest('.product-list');
+      if (productList) {
+        // 해당 .product-list 내의 img02 이미지 선택
+        const img02 = productList.querySelector('.img02');
+        const img01 = productList.querySelector('.img01');
+        if (img02) {
+          // 이미지의 현재 표시 상태에 따라 토글
+          if (img02.style.display === 'none' || img02.style.display === '') {
+            img02.style.display = 'block';
+            img01.style.display = 'none';
+          } else {
+            img02.style.display = 'none';
+            img01.style.display = 'block';
+          }
+        }
+      }
+    });
+  });
+
+
 };
 
 //========슬라이드 클릭 제품 설명 영역 끝
 
 //======flavor 버튼
 
-const menu_pintB = querySelector(".menu-pint");
-const menu_chocobarB = querySelector(".menu-pint");
-const menu_sandB = querySelector(".menu-sand");
-const menu_monakaB = querySelector(".menu-monaka");
-const menu_shakeB = querySelector(".menu-shake");
-const menu_coffeeB = querySelector(".menu-coffee");
+// const menu_pintB = querySelector(".menu-pint");
+// const menu_chocobarB = querySelector(".menu-pint");
+// const menu_sandB = querySelector(".menu-sand");
+// const menu_monakaB = querySelector(".menu-monaka");
+// const menu_shakeB = querySelector(".menu-shake");
+// const menu_coffeeB = querySelector(".menu-coffee");
 
-menu_pintB.addEventListener("click", function () {
-  //  $(".img01").style.display = "none"
-  //  $(".img02").style.display = "block"
-});
+// menu_pintB.addEventListener("click", function () {
+//    $(".pint .img01").style.display = "none"
+//    $(".pint .img02").style.display = "block"
+// });
+
+
