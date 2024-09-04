@@ -1,7 +1,9 @@
 @charset "utf-8";
 .product {
   width: 90%;
-  height: 800px;
+  /* height: 800px; */
+  height: auto;
+  padding-bottom: 4%;
   /* background-color: aquamarine; */
   margin: 0 auto;
 }
@@ -15,7 +17,7 @@
 
 .product-dec {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
 }
 .product h2 {
   font-size: 8rem;
@@ -40,7 +42,7 @@
   /* min-width: 70px;  */
   /* width: 70%;  */
   box-sizing: border-box;
-  margin: 10% auto;
+  margin: 17% auto;
   /* margin: 55px auto; */
 }
 .product-slide a {
@@ -82,11 +84,12 @@
   background-color: aliceblue;
   border-radius: 25px;
   display: flex;
+  
 }
 
 .product-dec-area {
   width: 100%;
-  transition: all 0.5s;
+  
 }
 
 .product-list {
@@ -95,7 +98,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  transition: all 0.5s;
   /* background-color: beige; */
 
   /* margin: 0 auto; */
@@ -106,17 +108,23 @@
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
+  font-family: "Jua", sans-serif;
+  padding-right: 3%;
   /* width: 35%; */
   /* font-size: 20px; */
 }
 
 .textbox h3 {
   font-size: 5rem;
+  font-weight: lighter;
+  letter-spacing: 1.8px;
   margin: 5%;
 }
 .textbox p {
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 2.4rem;
+  word-break: keep-all;
+  margin: 15px 0;
 }
 
 .decription {
@@ -141,11 +149,14 @@
   border: none;
   background-color: cornflowerblue;
   margin: 4% auto;
-  font-size: 1.6rem;
-  font-weight: bold;
+  font-size: 1.8rem;
+  /* letter-spacing: 1px; */
+  /* font-weight: bold; */
   color: aliceblue;
   cursor: pointer;
   text-align: center;
+  font-family: "Jua", sans-serif;
+  
 }
 
 .product-list .textbox .buyB {
@@ -163,9 +174,10 @@
 .img02 {
   /* display: block; */
   display: none;
-  width: 55%;
+  width: 70%;
+  z-index: 2;
   /* float: right; */
-  border: 15px solid #fff;
+  /* border: 15px solid #fff; */
   border-radius: 25px;
 }
 
@@ -211,6 +223,10 @@
     float: left;
   }
 
+  .img02{
+    width: 100%;
+  }
+
   .textbox p {
     font-size: 18px;
   }
@@ -222,6 +238,9 @@
 }
 
 @media screen and (max-width: 900px) {
+  .product h2{
+    font-size: 5rem;
+  }
   .swProduct{
     min-width: 120px;
     width: 25%;
@@ -230,6 +249,7 @@
     margin: 5% auto;
     width: 80%;
   }
+
   .product-slide a img{
     border: 6px solid rgb(161, 225, 255)
   }
