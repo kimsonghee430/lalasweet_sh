@@ -24,6 +24,7 @@ $(document).ready(function () {
       $(".modal-wrap").fadeOut(); // 모달 창 숨기기
       // 모달이 닫힐 때 쿠키를 설정하여 다음에는 모달이 뜨지 않도록 함
       document.cookie = "modalOpened=true"; // 모달이 닫힌 후 쿠키 설정
+      
     }
   
     var prize = "product03";
@@ -177,6 +178,6 @@ $(document).ready(function () {
       // startRoulette(); // 룰렛을 시작하는 함수가 있다면 호출
   
       // 모든 로직 수행 후 페이지 이동
-      window.location.href = "index.html";
+      window.location.href = "index.html#event";
     });
   });
