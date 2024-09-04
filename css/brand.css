@@ -468,7 +468,7 @@
     word-break: keep-all;
     /* font-size: 2rem; */
   }
-  .brand-intro br{
+  .brand-intro br {
     display: none;
   }
 }
@@ -535,10 +535,10 @@
     font-size: 2.1rem;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
   .brand {
     width: 80%;
-    height: 850px;
+    height: 750px;
     background: url(../images/brand/produce_mobi.jpg) no-repeat right;
     background-size: cover;
     border-radius: 25px;
@@ -566,6 +566,16 @@
     font-size: 1.8rem;
   }
 }
+@media screen and (max-width: 320px) {
+  .brand {
+    width: 85%;
+    height: 750px;
+    background: url(../images/brand/produce_320.jpg) no-repeat right;
+    background-size: cover;
+    border-radius: 25px;
+  }
+}
+
 
 /* 브랜드 매출 영역 */
 .brand-output {
@@ -578,11 +588,11 @@
   border-radius: 10px;
   margin: 0 auto;
 }
+
 .brand-output img{
   /* width: 50%; */
   width: 800px;
-  height: 100%;
-}
+  
 .output-news {
   /* background-color: aquamarine; */
   width: 800px;
@@ -615,4 +625,6 @@
 }
 
 /* 반응형(브랜드 매출 영역) */
-
+@media screen and (max-width: 1110px){
+  
+}
