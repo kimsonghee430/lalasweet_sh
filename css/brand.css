@@ -581,51 +581,113 @@
 .brand-output {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center; /* 가운데 정렬 */
   width: 85%;
-  height: 100%;
+  height: auto;
   background-color: rgb(255, 255, 255);
-  border-radius: 10px;
+  border-radius: 25px;
   margin: 0 auto;
 }
 
-.brand-output img{
-  /* width: 50%; */
-  width: 800px;
+.brand-image-output {
+  /* background-color: aqua; */
+  position: relative;
+  width: 65%; /* 화면 크기에 맞게 조정 */
+  height: auto;
 }
-  
-.output-news {
-  /* background-color: aquamarine; */
-  width: 800px;
-  width: 50%;
-  margin: 0 auto;
-  /* height: 100%; */
-  /* height: 800px; */
-  text-align: center;
+
+.brand-output img {
+  display: block;
+  width: 100%; /* 화면 크기에 맞게 조정 */
 }
-.output-news p {
+
+.color1, .color2, .color3 {
+  position: absolute;
+  font-size: 1.8vw; /* 화면 크기에 맞게 조정 */
+  font-weight: bold;
   font-family: "Jua", sans-serif;
-  font-size: 3rem;
-  line-height: 1.8;
-  padding: 50px;
-  margin: 5px;
-  color: #333;
+  opacity: 0; /* 초기 상태는 투명함 */
+  transition: opacity 1s ease-in-out; /* 부드러운 전환 설정 */
 }
 
-.color1{
+.color1 {
   color: rgb(224, 55, 55);
+  left: 26%;
+  bottom: 32%;
+  transform: translate(-50%, 50%); /* 정중앙으로 위치 조정 */
 }
-.color2{
+
+.color2 {
   color: rgb(196, 32, 32);
+  left: 51%;
+  bottom: 61%;
+  transform: translate(-50%, 50%); /* 정중앙으로 위치 조정 */
 }
-.color3{
+
+.color3 {
   color: rgb(148, 19, 19);
+  left: 75%; /* 위치 조정 */
+  bottom: 72%;
+  transform: translate(-50%, 50%); /* 정중앙으로 위치 조정 */
 }
+
+.show {
+  opacity: 1; /* 클래스가 추가되면 보이도록 설정 */
+}
+
+.output-news {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  opacity: 0; /* 초기 상태는 투명함 */
+  transition: opacity 1s ease-in-out; /* 부드러운 전환 설정 */
+}
+
+.output-news.show {
+  opacity: 1; /* 클래스가 추가되면 보이도록 설정 */
+}
+
+.output-news p {
+  width: 100%;
+  font-family: "Jua", sans-serif;
+  font-size: 2vw;
+  line-height: 1.8;
+  padding: 10px;
+  margin-bottom: 15px;
+  color: #333;
+  opacity: 1; /* 이 속성은 .show 클래스로 변경하지 않습니다. */
+}
+
+
+
 .color4{
   color: rgb(0, 2, 134);
 }
 
 /* 반응형(브랜드 매출 영역) */
-@media screen and (max-width: 1110px){
-  
+@media screen and (max-width: 1000px){
+  .brand-output {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* width: 85%; */
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    margin: 0 auto;
+  }
+
+  .brand-image-output{
+    /* background-color: aqua; */
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .color1, .color2, .color3 {
+    font-size: 2.7vw;
+  }
+
+  .output-news p{
+    font-size: 2.5vw;
+  }
 }
