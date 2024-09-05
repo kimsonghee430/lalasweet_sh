@@ -213,6 +213,22 @@ window.onload = function () {
       }
     });
   });
+    // 브랜드 매출 영역 판매량 수치 애니메이션
+    // 각 요소에 'show' 클래스를 0.5초 간격으로 추가
+    setTimeout(function() {
+      document.querySelector('.color1').classList.add('show');
+    }, 500);
+
+    setTimeout(function() {
+      document.querySelector('.color2').classList.add('show');
+    }, 1000);
+
+    setTimeout(function() {
+      document.querySelector('.color3').classList.add('show');
+    }, 1500);
+    setTimeout(function() {
+      document.querySelector('.output-news').classList.add('show');
+    }, 2300);
 
 
 };
