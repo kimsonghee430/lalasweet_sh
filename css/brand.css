@@ -612,22 +612,22 @@
 
 .color1 {
   color: rgb(224, 55, 55);
-  left: 26%;
-  bottom: 32%;
+  left: 19%;
+  bottom: 30%;
   transform: translate(-50%, 50%); /* 정중앙으로 위치 조정 */
 }
 
 .color2 {
   color: rgb(196, 32, 32);
-  left: 51%;
-  bottom: 61%;
+  left: 42%;
+  bottom: 59%;
   transform: translate(-50%, 50%); /* 정중앙으로 위치 조정 */
 }
 
 .color3 {
   color: rgb(148, 19, 19);
-  left: 75%; /* 위치 조정 */
-  bottom: 72%;
+  left: 65%; /* 위치 조정 */
+  bottom: 70%;
   transform: translate(-50%, 50%); /* 정중앙으로 위치 조정 */
 }
 

@@ -31,6 +31,13 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
+
+    <!-- AOS -->
+     <!-- CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- Swiper JS -->
@@ -42,7 +49,7 @@
     <link rel="stylesheet" href="css/slide.css" />
     <!-- <link rel="stylesheet" href="css/brand.css" /> -->
     <link rel="stylesheet" href="css/brand.css" />
-    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/product2.css" />
     <link rel="stylesheet" href="css/event.css" />
     <link rel="stylesheet" href="css/goods.css" />
     <link rel="stylesheet" href="css/contact.css" />
@@ -201,11 +208,11 @@
         <section class="brand-output">
           <div class="brand-image-output">
             <img src="images/brand/grape.png" alt="그래프" />
-            <span class="color1">"30만 개"</span>
-            <span class="color2">"330만 개"</span>
-            <span class="color3">"440만 개"</span>
+            <span data-aos="fade-up" data-aos-duration="900"  class="color1">"30만 개"</span>
+            <span data-aos="fade-up" data-aos-duration="900"  class="color2">"330만 개"</span>
+            <span data-aos="fade-up" data-aos-duration="900"  class="color3">"440만 개"</span>
           </div>
-          <div class="output-news">
+          <div data-aos="fade-right" data-aos-duration="900" class="output-news">
             <p>
               기존 2년 간의 누적 판매량을 돌파!<br />
               2024년 현재, 출시 첫 달 대비 무려 <span class="color4">76배 증가!!</span><br />
@@ -413,24 +420,40 @@
         <!-- 굿즈 영역 -->
         <section class="goods">
           <h2>GOODS</h2>
+          <p class="goods-desc">귀여운 라라스윗의 마스코트, 라라돌이</p>
           <div class="goods-img">
             <ul>
               <li>
                 <a href="#">
-                  <img src="images/goods/griptok_pink.png" alt="굿즈1" />
-                  <p>라라돌이 그립톡</p>
+                  <div class="img-container">
+                    <img src="images/goods/griptok_pink.png" alt="굿즈1" />
+                    <div class="overlay">
+                      <p>LALADORI GRIPTOK <br>
+                        라라돌이 그립톡</p>
+                    </div>
+                  </div>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="images/goods/keyring_yellow.gif" alt="굿즈2" />
-                  <p>라라돌이 키링</p>
+                  <div class="img-container">
+                    <img src="images/goods/keyring_yellow.gif" alt="굿즈2" />
+                    <div class="overlay">
+                      <p>LALADORI KEYRING <br>
+                        라라돌이 키링</p>
+                    </div>
+                  </div>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="images/goods/coaster_back.png" alt="굿즈3" />
-                  <p>라라돌이 코스터</p>
+                  <div class="img-container">
+                    <img src="images/goods/coaster_back.png" alt="굿즈3" />
+                    <div class="overlay">
+                      <p> LALADORI TEA COASTER<br>
+                        라라돌이 코스터</p>
+                    </div>
+                  </div>
                 </a>
               </li>
             </ul>
