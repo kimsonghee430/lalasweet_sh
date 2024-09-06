@@ -66,11 +66,11 @@ window.onload = function () {
   const swProduct = new Swiper(".swProduct", {
     loop: true,
     slidesPerView: 1,
-    centeredSlides: true,
-    direction: "vertical",
+    // centeredSlides: true,
+    // direction: "vertical",
     autoplay: { delay: 1 },
     speed: 5000,
-    // spaceBetween: 250,
+    spaceBetween: 20,
     breakpoints: {
       // 화면 너비가 320px 이상일 때
       320: {
@@ -81,32 +81,36 @@ window.onload = function () {
       },
       // 화면 너비가 480px 이상일 때
       480: {
-        slidesPerView: 2,
+        slidesPerView: 2.5,
         direction: "horizontal",
         centeredSlides: false,
         spaceBetween: 15,       // 적절한 간격으로 설정
       },
+      500: {
+        slidesPerView: 2.5,
+      },
+
       700: {
-        slidesPerView: 2,
-        direction: "vertical",
+        slidesPerView: 3,
+        // direction: "vertical",
       },
       730: {
-        slidesPerView: 2,
+        slidesPerView: 3,
       },
       900: {
-        slidesPerView: 2.5,
+        slidesPerView: 3,
       },
       // 화면 너비가 1024px 이상일 때
       1024: {
-        slidesPerView: 2.5,
+        slidesPerView: 4,
       },
       // 화면 너비가 1024px 이상일 때
       1100: {
-        slidesPerView: 2.5,
+        slidesPerView: 4,
       },
       // 화면 너비가 1200px 이상일 때
       1200: {
-        slidesPerView: 2.5,
+        slidesPerView: 5,
       },
     },
   });
@@ -215,22 +219,23 @@ window.onload = function () {
   });
     // 브랜드 매출 영역 판매량 수치 애니메이션
     // 각 요소에 'show' 클래스를 0.5초 간격으로 추가
-    setTimeout(function() {
-      document.querySelector('.color1').classList.add('show');
-    }, 500);
+    // setTimeout(function() {
+    //   document.querySelector('.color1').classList.add('show');
+    // }, 500);
 
-    setTimeout(function() {
-      document.querySelector('.color2').classList.add('show');
-    }, 1000);
+    // setTimeout(function() {
+    //   document.querySelector('.color2').classList.add('show');
+    // }, 1000);
 
-    setTimeout(function() {
-      document.querySelector('.color3').classList.add('show');
-    }, 1500);
-    setTimeout(function() {
-      document.querySelector('.output-news').classList.add('show');
-    }, 2300);
+    // setTimeout(function() {
+    //   document.querySelector('.color3').classList.add('show');
+    // }, 1500);
+    // setTimeout(function() {
+    //   document.querySelector('.output-news').classList.add('show');
+    // }, 2300);
 
 
+    AOS.init();
 };
 
 //========슬라이드 클릭 제품 설명 영역 끝
