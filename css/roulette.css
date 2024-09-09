@@ -840,11 +840,11 @@ body {
 }
 .roulette-wrapper #roulette-gift {
   z-index: 2;
-  width: 96%;
+  width: 59%;
   max-width: 460px;
   position: absolute;
-  top: 26%;
-  left: 3%;
+  top: 25%;
+  left: 12%;
 }
 
 .roulette-wrapper #roulette-niddle {
@@ -858,11 +858,11 @@ body {
 .roulette-wrapper #roulette-startBtn {
   z-index: 3;
   cursor: pointer;
-  width: 16%;
+  width: 10%;
   max-width: 68px;
   position: absolute;
-  top: 41%;
-  left: 43.5%;
+  top: 35%;
+  left: 36.5%;
 }
 @keyframes rotateAnimation {
   from {
