@@ -32,8 +32,8 @@ html{
     right: 20px;
     bottom: 200px;
     z-index: 999999;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border: none;
     cursor: pointer;
   }
