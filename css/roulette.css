@@ -792,8 +792,8 @@ body {
 }
 .modal {
   box-shadow: 5px 10px 10px 1px rgba(0, 0, 0, 0.3);
-  width: 100%;
-  /* width: 400px; */
+  /* width: 100%; */
+  width: 350px;
   /* height: 37.5vw; */
   height: 720px;
   /* min-height: 300px; */

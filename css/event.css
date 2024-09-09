@@ -20,6 +20,9 @@
   margin: 0 auto;
   display: block;
 }
+.event-logo a img{
+  width: 100%;
+}
 .event-list-area {
   display: flex;
 }
