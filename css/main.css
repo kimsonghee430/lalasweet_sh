@@ -20,3 +20,23 @@ html{
     position: relative;
 }
 
+
+/* gotop */
+.gotop {
+    position: relative;
+    display: contents;
+  }
+  .gotop img {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    width: 100px;
+    height: 100px;
+    border: none;
+    cursor: pointer;
+  }
+  .gotop.active-footer {
+    bottom: 320px;
+  }
+  
