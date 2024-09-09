@@ -60,12 +60,24 @@ body{
   width: 100%;
   height: auto;
 }
-.character {
-    /* content: ""; */
+/* .character {
     width: 842px;
     height: 974px;
     scale: 25%;
-    /* background: url("/images/lala_character/lala_character02.png"); */
+    position: absolute;
+    z-index: 9;
+    bottom: 70%;
+    left: 0;
+    opacity: 0; 
+    animation: bounce-in 4s ease-out forwards;
+  } */
+.character {
+    /* content: ""; */
+    width: 80%;
+    height: 40%;
+    /* scale: 25%; */
+    background: url("/images/lala_character/lala_character02.png") center no-repeat;
+    background-size: contain;
     /* background-color: #FF69B4; 캐릭터를 나타내는 박스 */
     /* border-radius: 50%; 둥근 모양으로 만들어 캐릭터 느낌 연출 */
     position: absolute;

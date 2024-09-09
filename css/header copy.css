@@ -53,70 +53,160 @@ body{
   position: relative;
   display: block;
   width: 100%;
-  height: 35%;
+  /* height: 30%; */
+  height: 38%;
   background-color: #016ED5;
 }
 .animation{
   width: 100%;
   height: auto;
 }
+/* .character {
+    width: 842px;
+    height: 974px;
+    scale: 25%;
+    position: absolute;
+    z-index: 9;
+    bottom: 70%;
+    left: 0;
+    opacity: 0; 
+    animation: bounce-in 4s ease-out forwards;
+  } */
 .character {
-  width: 25vw;  /* 화면 너비의 25% */
-  height: auto;  /* 높이를 자동으로 설정 */
-  position: absolute;
-  z-index: 9;
-  bottom: 30%;  /* 화면 높이의 30% 지점에서 시작 */
-  left: 0;
-  opacity: 0; /* 처음에 안보이도록 설정 */
-  animation: bounce-in 4s ease-out forwards;
-}
-
-@keyframes bounce-in {
-  0% {
-    opacity: 0;
-    transform: translateY(100%) ;
+    /* content: ""; */
+    width: 70%;
+    height: 40%;
+    background-color: aquamarine;
+    /* scale: 25%; */
+    background: url("/images/lala_character/lala_character02.png") center no-repeat;
+    background-size: contain;
+    /* background-color: #FF69B4; 캐릭터를 나타내는 박스 */
+    /* border-radius: 50%; 둥근 모양으로 만들어 캐릭터 느낌 연출 */
+    position: absolute;
+    z-index: 9;
+    bottom: 70%;
+    left: 0;
+    opacity: 0; /* 처음에 안보이도록 설정 */
+    animation: bounce-in 4s ease-out forwards;
   }
-  10% {
+  
+  @keyframes bounce-in {
+    0% {
       opacity: 0;
-      transform: translateX(-80%) translateY(290%);
+      transform: translateY(-50%) ;
+    }
+    10% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20%);
+    }
+    
+        30% {
+        opacity: 1;
+        transform: translateX(-30%) translateY(90%);
+        }
+        /* 30% {
+          opacity: 1;
+        transform: translateX(200%) translateY(300%);
+        }
+        40% {
+        opacity: 1;
+        transform: translateX(300%) translateY(300%);
+        } */
+        50% {
+        opacity: 1;
+        transform: translateX(0%) translateY(90%);
+        }
+        /* 60% {
+          opacity: 1;
+        transform: translateX(350%) translateY(100%);
+        }
+        70% {
+        opacity: 1;
+        transform: translateX(400%) translateY(300%);
+        } */
+        80% {
+        opacity: 1;
+        transform: translateX(20%) translateY(60%);
+      }
+      90% {
+        opacity: 1;
+        transform: translateX(55%) translateY(100%);
+      }
+      100%{
+        opacity: 0;
+        transform: translateX(55%) translateY(100%);
+      }
+
   }
-  30% {
+
+  @media screen and (max-width: 1110px) {
+    
+  }
+
+  .animation{
+    width: 100%;
+    height: auto;
+  }
+  .character-in-cup1{
+    background-image: url(/lala_character/empty-cup.png);
+    width: 989px;
+    height: 1079px ;
+    position: absolute;
+    scale: 33%;
+    right: -200px;
+    bottom: -453px;
+    z-index: 999;
+    /* transition: hide 0.4s; */
+    /* animation: hideImage 4s forwards; */
+
+  }
+
+  .character-in-cup2{
+    /* display: none; */
+    /* content: ""; */
+    /* background-color: aliceblue; */
+    position: absolute;
+    /* width: 1176px;
+    height: 1880px; */
+    scale: 23%;
+    right: -292px;
+    bottom: -789px;
+    z-index: 999;
+    /* background-image: url(/lala_character/cup-in-character.png);
+    background-position: cover; */
+    animation: showImage 4s forwards ;
+  }
+
+  
+  @keyframes hideImage {
+    0% {
       opacity: 1;
-      transform: translateX(100%) translateY(190%);
-  }
-  50% {
+    }
+    50% {
       opacity: 1;
-      transform: translateX(200%) translateY(290%);
-  }
-  80% {
+    }
+    84% {
+      opacity: 1;
+    }
+    100% {
       opacity: 0;
-      transform: translateX(400%) translateY(220%);
+    }
   }
-  85% {
+  
+  @keyframes showImage {
+    0% {
       opacity: 0;
-      transform: translateX(600%) translateY(200%);
+    }
+    90% {
+      opacity: 0;
+    }
+    97%{
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-}
-
-.character-in-cup1{
-  background-image: url(/lala_character/empty-cup.png);
-  width: 33vw;  /* 화면 너비의 33% */
-  height: auto;
-  position: absolute;
-  right: -10vw;  /* 화면 너비의 10%만큼 오른쪽으로 이동 */
-  bottom: -45vh;  /* 화면 높이의 45%만큼 아래로 이동 */
-  z-index: 999;
-}
-
-.character-in-cup2{
-  position: absolute;
-  width: 23vw;  /* 화면 너비의 23% */
-  height: auto;
-  right: -15vw;  /* 화면 너비의 15%만큼 오른쪽으로 이동 */
-  bottom: -60vh;  /* 화면 높이의 60%만큼 아래로 이동 */
-  z-index: 999;
-  animation: showImage 4s forwards ;
-}
 
 .background-area .logo-area{
     display: block;
@@ -129,6 +219,7 @@ body{
     /* background-color: rgba(154, 154, 255, 0.8);  */
 }
 .logo-area img{
+    display: block;
     width: auto;
     height: 70px;
 }
@@ -142,15 +233,30 @@ body{
   /* background-color: rgb(120, 154, 250); */
   /* margin: 0 auto; */
   text-align: center;
-  margin-top: 2%;
+  margin-bottom: 2%;
   /* font-family: Georgia, 'Times New Roman', Times, serif; */
   /* font-family: 'Courier New', Courier, monospace; */
   /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.banner-title{
+  /* position: absolute; */
+  /* top: 15%; */
+  /* left: 50%; */
+  /* transform: translate(0 , -20%); */
+  font-size: 60px;
+  color: #ffacb3;
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Jua", sans-serif;
+  letter-spacing: 3.4;
+}
 
+.banner-title span{
+  font-size: 50px;
+}
 .banner-line br{
-  display: none;
+  display: block;
 }
 
 .nav-area{
@@ -162,7 +268,7 @@ body{
   font-weight: bold;
   background-color: #016ED5;
   /* background-color: #d0e8ff; */
-  margin-top: 40px;
+  margin-top: 50px;
 }
 .menu-nav{
   width: 830px;
@@ -177,6 +283,55 @@ body{
   border: 5px solid #fff;
   border-radius: 25px;
 }
+
+@media screen and (max-width: 900px) {
+  .nav-area{
+    /* font-size: 2em; */
+  }
+  .menu-nav{
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    width: 90%
+  }
+  .background-area .logo-area{
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    /* background-color: azure; */
+    padding: 5% 0;
+    margin: 0 auto;
+  }
+  .logo-area img{
+    width: 100%;
+    height: 100%;
+
+  }
+}
+
+@media screen and (max-width: 700px) {
+.character-in-cup1{
+  scale: 24%;
+  /* right: -200px;
+  bottom: -487px; */
+  /* bottom: 10%; */
+  /* transform: translate(-1%, 15%); */
+  transform: translate(56%, 15%)
+  
+
+}
+
+.character-in-cup2{
+  scale: 17%;
+  /* transform: translate(-1%, 17%); */
+  transform: translate(67%, 17%);
+  /* right: -292px;
+  bottom: -840px; */
+}
+}
+
+
+
+
 .menu-nav li{
   display: block;
   /* padding: 20px; */
