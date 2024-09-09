@@ -95,18 +95,31 @@ html{
   .gotop-bag.active-footer {
     bottom: 320px;
   }
-
+  .product-list{
+    position: relative;
+  }
   .menu-select{
-    display: flex;
+    /* display: flex; */
+    display: none;
     flex-wrap: wrap;
+    position: absolute;
+    top: 80%;
+    left: 3%;
     font-size: 20px;
-    width: 230px;
+    width: 300px;
     gap: 15px;
+    border: 2px solid #333;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #fff;
     /* color: #333; */
   }
 
   .menu-select li {
-    
+    /* border: 2px solid #333; */
+    border-radius: 8px;
+    padding: 3px;
+    background-color: rgb(184, 222, 255);
   }
   .menu-select a{
     color: #333;
