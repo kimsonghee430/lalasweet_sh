@@ -30,7 +30,7 @@
   /* background-color: aquamarine; */
   width: 100%;
   /* max-width: 1300px; */
-  max-width: 80%;
+  max-width: 60%;
   height: auto;
   /* height: 350px; */
   /* margin: 10px; */
@@ -76,9 +76,10 @@
 .goods-img ul li img{
   position: relative;
   overflow: hidden;
-  width: 300px;
-  height: 300px;
-  /* width: 100%; */
+  /* width: 300px;
+  height: 300px; */
+  width: 100%;
+  height: auto;
   border-radius: 100%;
   overflow: hidden;
   border: 5px solid #ffffff;
@@ -133,6 +134,9 @@ a:hover .overlay {
 }
 
 
-@media screen and (max-width: 1000px) {
-
+@media screen and (max-width: 820px) {
+  .goods-img ul li a{
+    width: 200px;
+    height: 200px;
+  }
 }
