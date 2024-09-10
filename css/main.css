@@ -98,13 +98,18 @@ html{
   .product-list{
     position: relative;
   }
+
+  .menu-select-area{
+    position: relative;
+  }
+
   .menu-select{
-    /* display: flex; */
-    display: none;
+    display: flex;
+    /* display: none; */
     flex-wrap: wrap;
     position: absolute;
-    top: 80%;
-    left: 3%;
+    top: 82%;
+    left: 0%;
     font-size: 20px;
     width: 300px;
     gap: 15px;
@@ -112,6 +117,7 @@ html{
     padding: 8px;
     border-radius: 8px;
     background-color: #fff;
+    z-index: 999;
     /* color: #333; */
   }
 
@@ -125,3 +131,24 @@ html{
     color: #333;
   }
 
+  .quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 150px; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* overflow: hidden; */
+}
+.quantity{
+  width: auto;
+}
+
+.quantity-btn {
+    background-color: #f0f0f0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}

@@ -77,7 +77,7 @@ body{
     width: 65%;
     height: 40%;
     background-color: aquamarine;
-    /* scale: 25%; */
+    /* scale: 90%; */
     background: url("/images/lala_character/lala_character02.png") center no-repeat;
     background-size: contain;
     /* background-color: #FF69B4; 캐릭터를 나타내는 박스 */
@@ -306,6 +306,19 @@ body{
     height: 100%;
 
   }
+
+  .banner-title {
+    font-size: 44px;
+    }
+    
+    .banner-title span {
+    font-size: 38px;
+    }
+    
+    .banner-line {
+    font-size: 31px;
+    }
+    
 }
 
 @media screen and (max-width: 700px) {
@@ -329,7 +342,22 @@ body{
 }
 }
 
-
+@media screen and (max-width: 500px){
+  .background-area {
+    height: 30%;
+  }
+  .banner-title {
+    font-size: 36px;
+    }
+    
+    .banner-title span {
+    font-size: 31px;
+    }
+    
+    .banner-line {
+    font-size: 22px;
+    }
+}
 
 
 .menu-nav li{
