@@ -18,7 +18,7 @@ window.onload = function () {
     autoplay: { delay: 0 },
     speed: 3000,
     freeMode: true, // 자유 모드 활성화, 슬라이드가 자연스럽게 이동
-    freeModeMomentum: true, // 관성 모드 활성화로 부드러운 움직임
+    // freeModeMomentum: true, 
     freeModeMomentumRatio: 0.5, // 관성 효과의 강도 조절
     slidesPerView: 2,
     spaceBetween: 30,
