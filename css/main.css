@@ -57,7 +57,7 @@ html{
   }
   .gotop ul li a{
     color: #fff;
-    font-size: 20px;
+    font-size: 19px;
   }
 
   /* gotop (장바구니기능 )*/
@@ -246,7 +246,7 @@ html{
     right: 20px;
     bottom: 175px;
     z-index: 999999;
-    width: 8%;
+    width: 7%;
     min-width: 100px;
     height: auto;
     border: none;
