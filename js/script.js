@@ -8,9 +8,9 @@ window.onload = function () {
   }, 4200); // 5000ms = 5초
 
   setTimeout(function () {
-    const image = document.querySelector(".character"); // 이미지의 클래스명을 지정
+    const image = document.querySelector(".character"); 
     image.style.display = "none";
-  }, 4000); // 5000ms = 5초
+  }, 4000);
 
   // ===메인 배너 스와이퍼 슬라이드 영역 시작
   const swPromotion = new Swiper(".swPromotion", {
@@ -76,15 +76,15 @@ window.onload = function () {
       320: {
         slidesPerView: 2,
         direction: "horizontal",
-        centeredSlides: false,  // horizontal에서는 슬라이드를 가운데 정렬하지 않음
-        spaceBetween: 10,       // 슬라이드 간의 간격을 설정
+        centeredSlides: false, // horizontal에서는 슬라이드를 가운데 정렬하지 않음
+        spaceBetween: 10, // 슬라이드 간의 간격을 설정
       },
       // 화면 너비가 480px 이상일 때
       480: {
         slidesPerView: 2.5,
         direction: "horizontal",
         centeredSlides: false,
-        spaceBetween: 15,       // 적절한 간격으로 설정
+        spaceBetween: 15, // 적절한 간격으로 설정
       },
       500: {
         slidesPerView: 2.5,
@@ -114,8 +114,6 @@ window.onload = function () {
       },
     },
   });
-
-
 
   // ===프로덕트 슬라이드 영역 끝
 
@@ -193,65 +191,57 @@ window.onload = function () {
     milkDesc.style.display = "flex"; // 클릭된 설명란만 표시
   });
 
+  const flavorButtons = document.querySelectorAll(".menu-flavor");
 
-  const flavorButtons = document.querySelectorAll('.menu-flavor');
-
-  flavorButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
+  flavorButtons.forEach(function (button) {
+    button.addEventListener("click", function () {
       // 버튼이 속한 .product-list 요소 찾기
-      const productList = button.closest('.product-list');
+      const productList = button.closest(".product-list");
       if (productList) {
         // 해당 .product-list 내의 img02 이미지 선택
-        const img02 = productList.querySelector('.img02');
-        const img01 = productList.querySelector('.img01');
+        const img02 = productList.querySelector(".img02");
+        const img01 = productList.querySelector(".img01");
         if (img02) {
           // 이미지의 현재 표시 상태에 따라 토글
-          if (img02.style.display === 'none' || img02.style.display === '') {
-            img02.style.display = 'block';
-            img01.style.display = 'none';
+          if (img02.style.display === "none" || img02.style.display === "") {
+            img02.style.display = "block";
+            img01.style.display = "none";
           } else {
-            img02.style.display = 'none';
-            img01.style.display = 'block';
+            img02.style.display = "none";
+            img01.style.display = "block";
           }
         }
       }
     });
   });
-    // 브랜드 매출 영역 판매량 수치 애니메이션
-    // 각 요소에 'show' 클래스를 0.5초 간격으로 추가
-    // setTimeout(function() {
-    //   document.querySelector('.color1').classList.add('show');
-    // }, 500);
 
-    // setTimeout(function() {
-    //   document.querySelector('.color2').classList.add('show');
-    // }, 1000);
+  AOS.init();
 
-    // setTimeout(function() {
-    //   document.querySelector('.color3').classList.add('show');
-    // }, 1500);
-    // setTimeout(function() {
-    //   document.querySelector('.output-news').classList.add('show');
-    // }, 2300);
-
-
-    AOS.init();
+  const buyB = document.querySelectorAll(".buyB");
+  const menuSelect = document.querySelectorAll(".menu-select-area");
+  
+  menuSelect.forEach((menu) => {
+    // 초기 상태에서 모든 메뉴 항목 숨기기
+    menu.style.display = "none";
+  });
+  
+  buyB.forEach((item, index) => {
+    item.addEventListener("click", function () {
+      // 현재 선택한 메뉴 항목의 display 상태를 확인
+      const currentMenu = menuSelect[index];
+  
+      if (currentMenu.style.display === "block") {
+        // 현재 보이는 상태라면 숨기기
+        currentMenu.style.display = "none";
+      } else {
+        // 모든 메뉴 항목을 숨기기
+        menuSelect.forEach((menu) => {
+          menu.style.display = "none";
+        });
+        // 클릭한 버튼에 해당하는 메뉴 항목 보이기
+        currentMenu.style.display = "block";
+      }
+    });
+  });
+  
 };
-
-//========슬라이드 클릭 제품 설명 영역 끝
-
-//======flavor 버튼
-
-// const menu_pintB = querySelector(".menu-pint");
-// const menu_chocobarB = querySelector(".menu-pint");
-// const menu_sandB = querySelector(".menu-sand");
-// const menu_monakaB = querySelector(".menu-monaka");
-// const menu_shakeB = querySelector(".menu-shake");
-// const menu_coffeeB = querySelector(".menu-coffee");
-
-// menu_pintB.addEventListener("click", function () {
-//    $(".pint .img01").style.display = "none"
-//    $(".pint .img02").style.display = "block"
-// });
-
-

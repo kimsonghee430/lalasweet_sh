@@ -235,6 +235,10 @@
   .product h2{
     font-size: 5rem;
   }
+
+  .menu-nav li{
+    margin: 20px;
+  }
   
 }
 @media screen and (max-width: 700px){
@@ -268,5 +272,10 @@
 
   .img01 {
     width: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .menu-nav li{
+    /* margin: 18px; */
   }
 }
