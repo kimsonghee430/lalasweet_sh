@@ -6,12 +6,9 @@
     list-style: none;
     text-decoration: none;
 }
-
 html{
     font-size: 10px;
 }
-
-
 .wrap{
     width: 100%;
     height: 100%;
@@ -29,7 +26,7 @@ html{
   .gotop img {
     position: fixed;
     right: 20px;
-    bottom: 200px;
+    bottom: 175px;
     z-index: 999999;
     width: 10%;
     min-width: 120px;
@@ -43,9 +40,6 @@ html{
   
   /* gotop (글자부분) */
   .gotop ul{
-    /* display: flex;
-    flex-direction: column; */
-    color: beige;
     position: fixed;
     right: 20px;
     bottom: 75px;
@@ -55,13 +49,15 @@ html{
     font-size: 2rem;
   }
   .gotop ul li{
-    margin: 8px;
-    background-color: darkmagenta;
+    margin: 4px;
+    background-color: rgba(61, 181, 218, 0.87);
+    border-radius: 5px;
     z-index: 999999;
-    padding: 5px;
+    padding: 3px;
   }
   .gotop ul li a{
     color: #fff;
+    font-size: 20px;
   }
 
   /* gotop (장바구니기능 )*/
@@ -184,3 +180,96 @@ html{
 /* .melonbar .menu-select-area .menu-select li a{
   display: inline-block;
 } */
+
+
+/* 반응형 gotop (화살표 버튼)*/
+@media screen and (max-width: 425px){
+  .gotop {
+    position: relative;
+    display: contents;
+    transition: all 1s;
+  }
+  .gotop img {
+    position: fixed;
+    right: 20px;
+    bottom: 175px;
+    z-index: 999999;
+    width: 10%;
+    min-width: 100px;
+    height: auto;
+    border: none;
+    cursor: pointer;
+  }
+  .gotop.active-footer {
+    bottom: 320px;
+  }
+  
+  /* gotop (글자부분) */
+  .gotop ul{
+    position: fixed;
+    right: 20px;
+    bottom: 75px;
+    z-index: 999999;
+    width: auto;
+    height: 100px;
+    font-size: 2rem;
+  }
+  .gotop ul li{
+    margin: 4px;
+    background-color: rgba(61, 181, 218, 0.87);
+    border-radius: 5px;
+    z-index: 999999;
+    padding: 3px;
+  }
+  .gotop ul li a{
+    color: #fff;
+    font-size: 18px;
+  }
+  
+}
+
+@media screen and (max-width: 320px){
+  .gotop {
+    position: relative;
+    display: contents;
+    transition: all 1s;
+  }
+  .gotop img {
+    position: fixed;
+    right: 20px;
+    bottom: 175px;
+    z-index: 999999;
+    width: 8%;
+    min-width: 100px;
+    height: auto;
+    border: none;
+    cursor: pointer;
+  }
+  .gotop.active-footer {
+    bottom: 320px;
+  }
+  
+  /* gotop (글자부분) */
+  .gotop ul{
+    position: fixed;
+    right: 20px;
+    bottom: 75px;
+    z-index: 999999;
+    width: auto;
+    height: 100px;
+    font-size: 2rem;
+  }
+  .gotop ul li{
+    margin: 4px;
+    background-color: rgba(61, 181, 218, 0.87);
+    border-radius: 5px;
+    z-index: 999999;
+    padding: 2px;
+  }
+  .gotop ul li a{
+    color: #fff;
+    font-size: 14px;
+  }
+  
+}
+
