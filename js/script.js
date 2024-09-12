@@ -17,6 +17,7 @@ window.onload = function () {
     loop: false,
     autoplay: { delay: 0 },
     speed: 3000,
+    disableOnInteraction: false,
     freeMode: true, // 자유 모드 활성화, 슬라이드가 자연스럽게 이동
     // freeModeMomentum: true, 
     freeModeMomentumRatio: 0.5, // 관성 효과의 강도 조절
@@ -29,26 +30,35 @@ window.onload = function () {
       },
       // 화면 너비가 480px 이상일 때
       480: {
-        slidesPerView: 2,
+        slidesPerView: 3,
       },
       // 화면 너비가 768px 이상일 때
       730: {
         slidesPerView: 3,
       },
       900: {
+        slidesPerView: 3,
+      },
+      // 화면 너비가 1024px 이상일 때
+      950: {
+        slidesPerView: 4,
+      },
+      1024: {
         slidesPerView: 4,
       },
       // 화면 너비가 1024px 이상일 때
-      1024: {
+      1100: {
         slidesPerView: 5,
       },
-      // 화면 너비가 1024px 이상일 때
-      1100: {
-        slidesPerView: 6,
+      1250: {
+        slidesPerView: 5,
       },
       // 화면 너비가 1200px 이상일 때
       1200: {
-        slidesPerView: 7,
+        slidesPerView: 5,
+      },
+      1300: {
+        slidesPerView: 6,
       },
     },
     navigation: {
