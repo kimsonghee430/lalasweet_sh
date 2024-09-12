@@ -23,9 +23,7 @@ html{
     display: contents;
     transition: all 1s;
     opacity: 0;
-  visibility: hidden;
-  
-    
+    visibility: hidden;
   }
 
   .gotop img {
@@ -191,10 +189,14 @@ html{
 .main.hide {
   top:-1000px;
 }
+.contact.show{
+  top:-5050px;
+}
 .gotop.show{
   opacity: 1;
   visibility: visible;
 }
+
 /* .melonbar .menu-select-area .menu-select li a{
   display: inline-block;
 } */
