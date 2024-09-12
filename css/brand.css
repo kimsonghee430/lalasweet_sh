@@ -188,6 +188,7 @@
     text-align: center;
   }
 
+
   /* 말풍선 */
   .balloon {
     /* display: inline-block; */
@@ -690,5 +691,11 @@
 
   .output-news p {
     font-size: 2.5vw;
+  }
+
+}
+@media screen and (max-width: 700px) {
+  .output-news p {
+    font-size: 3.5vw;
   }
 }
