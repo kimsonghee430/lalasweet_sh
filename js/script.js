@@ -285,4 +285,32 @@ window.onload = function () {
     alert("회원가입이 완료되었습니다.")
     alert("쿠폰이 정상적으로 발급되었습니다.")
   })
+
+  // 프로덕트 영역 상품 수량조절
+  
+  // 수량 감소 함수
+  function decrease() {
+    var quantityInput = document.getElementById("quantity");
+    var currentValue = parseInt(quantityInput.value);
+
+    if (currentValue > 1) {
+      quantityInput.value = currentValue - 1;
+    }
+  }
+
+  // 수량 증가 함수
+  function increase() {
+    var quantityInput = document.getElementById("quantity");
+    var currentValue = parseInt(quantityInput.value);
+
+    quantityInput.value = currentValue + 1;
+  }
+
+  // 이벤트 리스너 추가
+  const minus = document.querySelector("#minus");
+  const plus = document.querySelector("#plus");
+
+  minus.addEventListener("click", decrease); // decrease 함수 호출
+  plus.addEventListener("click", increase);  // increase 함수 호출
+
 };
