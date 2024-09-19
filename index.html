@@ -60,6 +60,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/cartlist.css" />
     <!-- <link rel="stylesheet" href="css/header.css" /> -->
     <link rel="stylesheet" href="css/header copy.css" />
     <link rel="stylesheet" href="css/slide.css" />
@@ -69,11 +70,14 @@
     <link rel="stylesheet" href="css/event.css" />
     <link rel="stylesheet" href="css/goods.css" />
     <link rel="stylesheet" href="css/contact.css" />
+
+
     <!-- 폰트적용 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
     <title>Lalasweet</title>
 
     <!-- Google tag (gtag.js) -->
@@ -110,6 +114,17 @@
         <img src="images/cart.png" alt="장바구니" />
       </a>
     </div>
+    <!-- 장바구니 클릭시 담은 메뉴영역 펼치기 -->
+     <!-- <div class="cartlist-area"> -->
+      <!-- <ul class="cartlist"> -->
+        <!-- js 출력 -->
+        <!-- <li>dkdldkfjkdjfkdj</li>
+        <li>dkdldkfjkdjfkdj</li>
+        <li>dkdldkfjkdjfkdj</li>
+        <li>dkdldkfjkdjfkdj</li> -->
+      </ul>
+      <!-- js 출력 -->
+     </div>
     <!-- 전체 레이아웃 -->
     <div class="wrap">
       <!-- 배너 배경화면 -->
@@ -575,8 +590,8 @@
                 <img src="images/event/event1.svg" alt="룰렛"
               /></a>
 
-              <a href="#"
-                ><p class="evt-tit">회원가입 이벤트 📝</p>
+              <a href="signIn.html" onclick="window.open('signIn.html', '_blank', 'width=800,height=800'); return false;">
+                <p class="evt-tit">회원가입 이벤트 📝</p>
                 <p class="evt_desc">
                   쿠폰 받고 <br class="evt_br" />
                   무료배송 이벤트 함께해요
@@ -643,14 +658,23 @@
           <!-- 푸터 왼쪽부분 -->
           <div class="footer-left">
             <img src="images/footer/logo_black.png" alt="로고" />
-            <p>이용약관 | 개인정보처리 | 채용</p>
-            <p>(주)라라스윗 | 사용자 등록번호 : 123-45-01234</p>
-            <p>통신판매업 신고번호 : 제 2024-대구중구-00123호</p>
-            <p>고객센터 : 1533-1234 (평일 9~18시 운영 / 주말 및 공휴일 휴무)</p>
-            <p>contact@lalasweet.kr</p>
-            <p>대표 : KIM LALA | 주소 : 대구시 중구 라라빌딩 4층</p>
+            <div class="footer-textbox">
+              <!-- <p>이용약관 | 개인정보처리 | 채용</p> -->
+              <p>(주)라라스윗 | 사용자 등록번호 : 123-45-01234</p>
+              <p>통신판매업 신고번호 : 제 2024-대구중구-00123호</p>
+              <!-- <p>고객센터 : 1533-1234 (평일 9~18시 운영 / 주말 및 공휴일 휴무)</p>
+              <p>contact@lalasweet.kr</p> -->
+              <p>대표 : KIM LALA | 주소 : 대구시 중구 라라빌딩 4층</p>
+              <!-- <p>2024 ⓒ LALASWEET All rights reserved</p> -->
+            </div>
+            <ul>
+              <li><a href="#">이용약관</li></a>
+              <li><a href="#">개인정보처리</li></a>
+              <li><a href="#">채용</li></a>
+            </ul>
             <p>2024 ⓒ LALASWEET All rights reserved</p>
           </div>
+      <hr>
           <!-- 푸터 오른쪽 부분 -->
           <div class="footer-right">
             <img src="images/footer/icon_Envelope.svg" alt="메일" class="mail-icon" />
@@ -660,9 +684,18 @@
             >
             <span>이메일 문의 contact@lalasweet.kr</span>
             <div class="footer-icon">
-              <img src="images/footer/insta.svg" alt="인스타그램" />
-              <img src="images/footer/facebook.svg" alt="페이스북" />
+              <a href="#">
+                <img src="images/footer/insta.svg" alt="인스타그램" />
+              </a>
+              <a href="#"><img src="images/footer/facebook.svg" alt="페이스북" />
+              </a>
             </div>
+            <!-- <p>2024 ⓒ LALASWEET All rights reserved</p> -->
+            <!-- <ul>
+              <li><a href="#">이용약관</li></a>
+              <li><a href="#">개인정보처리</li></a>
+              <li><a href="#">채용</li></a>
+            </ul> -->
           </div>
         </div>
       </footer>

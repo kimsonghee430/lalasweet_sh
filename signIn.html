@@ -6,30 +6,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/login.css">
-    <title>[Lalasweet]Login Page</title>
+    <link rel="stylesheet" href="css/signIn.css">
+    <script src="js/signin.js"></script>
+    
+    <title>[Lalasweet]Signin Page</title>
 </head>
 <body>
     <div class="wrap">
         <a href="index.html" class="logo">
-            <img src="/images/logo_gp_24.png" alt="로고" id="login_logo">
+            <img src="/images/logo_red_24.png" alt="로고" id="login_logo">
             <!-- <img src="/images/lala_character/lala_character02.png" alt="" id="login_chara"> -->
         </a>
         <form class="form">
             <fieldset>
-                <h2>LOGIN</h2>
-                <div class="login-area">
+                <h2>회원가입</h2>
+                <div class="signin-area">
                     <div class="input-area">
-                        <label for="userId">ID / EMAIL</label>
+                        <label for="userPassword">이름</label>
+                        <input type="text" id="name" value="">
+                    </div>
+                    <div class="input-area">
+                        <label for="userId">아이디 / 이메일</label>
                         <input type="text" id="userId">
                     </div>
                     <div class="input-area">
-                        <label for="userPassword">PASSWORD </label>
+                        <label for="userPassword">비밀번호 </label>
                         <input type="password" id="userPassword" value="">
                     </div>
-                    <button type="submit" class="loginBt">로그인</button>
+                    <div class="input-area">
+                        <label for="userPassword">비밀번호 확인</label>
+                        <input type="password" id="userPassword" value="">
+                    </div>
+                    <div class="input-area">
+                        <label for="userPassword">전화번호</label>
+                        <input type="number" id="phone" value="">
+                    </div>
+                    <button type="submit" class="signinBt">가입하기</button>
                     <div class="sign_find">
-                        <a href="signIn.html" class="signup">회원가입</a>
                         <a href="#" class="findID">아이디/비밀번호 찾기</a>
                     </div>
                 </div>
