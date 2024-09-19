@@ -129,10 +129,10 @@ a:hover .overlay {
   display: block;
   width: 200px;
   height: auto;
-
-
 }
-
+.goodsBtn a{
+  color: #016ed5;
+}
 
 @media screen and (max-width: 820px) {
   .goods-img ul li a{
