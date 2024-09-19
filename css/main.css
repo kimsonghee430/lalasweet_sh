@@ -65,9 +65,10 @@ html{
 
   /* gotop (장바구니기능 )*/
   .gotop-bag {
-    position: relative;
+    display: none;
+    
     position: fixed;
-    display: contents;
+    /* display: contents; */
     transition: all 1s;
     /* width: 100px;
     height: 100px; */
@@ -101,91 +102,7 @@ html{
   .gotop-bag.active-footer {
     bottom: 320px;
   }
-  .product-list{
-    position: relative;
-  }
 
-  .menu-select-area{
-    position: relative;
-    display: none;
-  }
-
-  .menu-select{
-    display: flex;
-    /* display: none; */
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 82%;
-    left: -10%;
-    font-size: 20px;
-    width: 300px;
-    gap: 15px;
-    border: 2px solid #333;
-    padding: 8px;
-    border-radius: 8px;
-    background-color: #fff;
-    z-index: 999;
-    
-    /* color: #333; */
-  }
-
-  .menu-select li {
-    /* border: 2px solid #333; */
-    border-radius: 8px;
-    padding: 3px;
-    /* background-color: rgb(184, 222, 255); */
-    background-color: #fff;
-  }
-  .menu-select a{
-    color: #333;
-  }
-
-  .menu-select li:hover{
-    background-color: rgb(212, 235, 255);
-    color: #fff;
-  }
-
-  .quantity-container {
-    /* display: flex; */
-    align-items: center;
-    justify-content: center;
-    /* width: 150px; */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    /* overflow: hidden; */
-}
-#quantity{
-  width: 30px;
-  text-align: center;
-  border: none;
-  outline: none;
-  /* border: 1px solid rgba(0, 0, 0, 0.2); */
-}
-
-.quantity-btn {
-    background-color: transparent;
-    border: none;
-    width: 30px;
-    height: 30px;
-    font-size: 20px;
-    cursor: pointer;
-}
-.putIn{
-  float: left;
-  padding: 15px;
-  font-size: 16px;
-  /* font-weight: bold; */
-  font-family: "Jua", sans-serif;
-  border: none;
-  border-radius: 8px;
-  color: white;
-  background-color: #a53be2;
-  
-}
 .main.hide {
   top:-1000px;
 }
@@ -197,9 +114,6 @@ html{
   visibility: visible;
 }
 
-/* .melonbar .menu-select-area .menu-select li a{
-  display: inline-block;
-} */
 
 
 /* 반응형 gotop (화살표 버튼)*/

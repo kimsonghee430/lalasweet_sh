@@ -253,5 +253,36 @@ window.onload = function () {
       }
     });
   });
-  
+  // 굿즈 이미지 프리벤트 적용
+  const goodsImgA = document.querySelectorAll(".goods-img ul a")
+  goodsImgA.forEach(function (anchor){
+    anchor.addEventListener("click", function (event) {
+      // href 속성이 '#'인지 확인
+      if (anchor.getAttribute("href") === "#") {
+        // 기본 동작을 막음
+        event.preventDefault();
+      }
+})
+})
+
+  //  모든 a 태그를 선택
+  var anchors = document.querySelectorAll("a");
+  //  a 태그에 #기능 제거하는 기능
+  // 각 a 태그에 대해 클릭 이벤트 리스너를 추가
+  anchors.forEach(function (anchor) {
+    anchor.addEventListener("click", function (event) {
+      // href 속성이 '#'인지 확인
+      if (anchor.getAttribute("href") === "#") {
+        // 기본 동작을 막음
+        event.preventDefault();
+      }
+    });
+  });
+
+  const signinBt = document.querySelector(".signinBt")
+  signinBt.addEventListener("click" , function(){
+
+    alert("회원가입이 완료되었습니다.")
+    alert("쿠폰이 정상적으로 발급되었습니다.")
+  })
 };
