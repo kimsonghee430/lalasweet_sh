@@ -9,98 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/total.css">
+    
     <title>total 주문하기</title>
-    <style>
-      /* #container {
-
-        max-width: 1300px;
-        margin: 0 auto;
-
-        padding: 20px;
-      } */
-
-      #container{
-  display: flex;
-  /* display: none; */
-  /* flex-direction: column; */
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  /* top: 82%;
-  left: -10%; */
-  font-size: 20px;
-  width: 300px;
-  gap: 15px;
-  border: 2px solid #333;
-  padding: 8px;
-  border-radius: 8px;
-  background-color: #fff;
-  z-index: 999;
-  font-family: "Noto Sans KR", sans-serif;
-  
-  /* color: #333; */
-}
-
-
-      fieldset {
-        margin-bottom: 20px;
-        border: 1px solid #b6b5b5;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 4px;
-      }
-
-      fieldset:last-child{
-        border: none;
-      }
-
-      legend{
-        font-size: 16px;
-        font-weight: bold;
-      }
-
-      #total {
-        border: none;
-        font-size: 16px;
-        font-weight: bold;
-        border: 1px solid #333;
-        border-radius: 8px;
-        padding: 5px;
-        margin-top: 15px;
-      }
-
-
-      label{
-  display: block;
-  /* background-color: blueviolet; */
-  width: 100px;
-  height: auto;
-  border-radius: 8px;
-  color: #333;
-  font-weight: bold;
-  border: 2px solid #333;
-  background-color: #fff;
-  font-size: 1rem;
-  text-align: right;
-  padding-right: 10px;
-  /* margin-right: 20px; */
-  /* font-family: "Noto Sans KR", sans-serif; */
-  
-}
-
-.sideItem{
-  font-size: 15px;
-  font-weight: bold;
-  color: navy;
-}
-    </style>
   </head>
   <body>
     <div id="container">
       <form>
-        <fieldset>
-          <legend>상품 고르기</legend>
+        <fieldset class="menu-select-area pint">
           <br />
           <br />
           <label for="p_vailla">
@@ -140,15 +56,41 @@
             파인트<br>(애플민트)
           </label>
         </fieldset>
-        <fieldset>
-          <div id="slelectedItem">
-            <!-- js출력 -->
-          </div>
-          
-          <input type="text" id="total" name="total" class="price" />
+
+      
+        <fieldset class="menu-select-area sand">
+          <br />
+          <br />
+          <label for="s_vailla">
+            <input type="checkbox" id="p_vailla" class="checkbox" name="p_vailla" value="8000" />
+            샌드<br>(바닐라)
+          </label>
+          <label for="s_choco">
+            <input type="checkbox" id="p_choco" class="checkbox" name="p_choco" value="8000" />
+            샌드<br>(초콜릿)
+          </label>
+          <label for="s_matcha">
+            <input type="checkbox" id="p_matcha" class="checkbox" name="p_matcha" value="8000" />
+            샌드<br>(말차)
+          </label>
+          <label for="s_redbean">
+            <input type="checkbox" id="p_straw" class="checkbox" name="p_straw" value="8000" />
+            샌드<br>(팥)
+          </label>
         </fieldset>
       </form>
     </div>
+
+    <div class="total-container">
+      <fieldset>
+        <div id="slelectedItem">
+          <!-- js출력 -->
+        </div>
+        <input type="text" id="total" name="total" class="price" />
+      </fieldset>
+    </div>
+
+
     <script>
       let basePrice = 0;
       let price = basePrice;
