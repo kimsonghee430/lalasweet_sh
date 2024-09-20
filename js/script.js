@@ -279,20 +279,12 @@ window.onload = function () {
     });
   });
 
-  const signinBt = document.querySelector(".signinBt");
-  signinBt.addEventListener("click", function () {
-    alert("회원가입이 완료되었습니다.");
-    alert("쿠폰이 정상적으로 발급되었습니다.");
+
+  const mb_menu = document.querySelector(".mb-nav");
+  const menubar = document.querySelector("#header_menu");
+  menubar.addEventListener("click", function() {
+    mb_menu.classList.toggle("active");
   });
-
-  const mb_menu = document.querySelector(".mb-nav")
-  const menubar = document.querySelector("#menubar")
-  menubar.addEventListener("click" , function(){
-    alert("gd")
-    mb_menu.style.display = "block"
-
-  })
-
 
 
 

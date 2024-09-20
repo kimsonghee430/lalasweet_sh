@@ -10,6 +10,6 @@ window.onload = function () {
     // 페이지 이동
     setTimeout(function() {
         window.location.href = "index.html#event";
-    }, 200); // 2초 후 페이지 이동
+    }, 100); // 2초 후 페이지 이동
 }
   )};

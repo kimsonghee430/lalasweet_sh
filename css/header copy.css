@@ -62,9 +62,12 @@ body {
   margin: 0px 10px;
   padding: 5px;
   display: none;
-  
-  
+
 }
+.mb-nav.active{
+  display: block !important;
+}
+
 .mb-nav li{
   margin: 5px 0;
 }
