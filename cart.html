@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/cart.js"></script>
+</head>
+<body>
+    <!-- Product section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5" th:object="${item}">
+        <div class="row gx-4 gx-lg-5 align-items-center" >
+            <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" th:src="|/images/${item.getItemImageListDto().get(0).getStoreName()}|" alt="..." /></div>
+            <div class="col-md-6">
+                <h1 class="display-5 fw-bolder" th:text="${item.getName()}">Shop item template</h1>
+                <input type="hidden" th:value="${item.itemId}" id="id" name="id">
+                <div class="fs-5 mb-5">
+                    <input type="hidden" th:value="${item.price}" id="price" name="price">
+                    <span class="text-decoration-none" th:text="${item.getPrice()}"></span>원
+                </div>
+                <hr class="my-4">
+
+
+                <div class="input-group fs-5 mb-5">
+                    <div class="input-group-prepend">
+                        <input type="hidden" th:value="${item.stockQuantity}" id="stockQuantity" name="stockQuantity">
+                        <span class="input-group-text">주문 수량</span>
+                    </div>
+                    <input class="form-control text-center me-3" id="count" name="count" type="number" value="1" style=" max-width: 5rem" />
+                </div>
+
+
+                <div class="container bg-light">
+                    <h6>총 상품 금액</h6>
+                    <h4 name="totalPrice" id="totalPrice" class="font-weight-bold" ></h4>
+                </div>
+                <br>
+
+                <div class="d-flex">
+                    <form th:action="@{/logout}" class="d-flex" method="post">
+                        <button class="btn btn-outline-dark"
+                                type="submit">
+                            바로 구매하기
+                        </button>
+                    </form>
+                    &nbsp
+                    <button class="btn btn-outline-dark flex-shrink-0" type="button" th:onclick="addCart()">
+                        <i class="bi-cart-fill me-1"></i>
+                        장바구니 담기
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<script th:inline="javascript">
+  
+    <!-- 장바구니 담기 -->
+    function addCart() {
+
+        var count = $("#count").val();
+        var itemId = $("#id").val();
+        var cartForm = {
+            itemId : itemId,
+            count : count
+        };
+
+       $.ajax({
+           url: "/cart",
+           data: cartForm,
+           type: 'POST',
+           success: function(result) {
+               alert("상품을 담았습니다.");
+               location.href = "/";
+           },
+
+           error: function (jqXHR, textStatus, errorThrown) {
+               alert(jqXHR.responseText);
+               location.href="/members"
+           }
+       })
+    }
+
+    
+</script>
+</body>
+</html>

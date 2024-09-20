@@ -18,7 +18,7 @@
     padding: 3% 0;
     visibility: hidden; /* 초기 상태에서 숨김 */
   opacity: 0; /* 완전히 보이지 않도록 */
-  transition: visibility 0s 4s, opacity 4s ease-in-out; /* 5초 후에 천천히 나타나도록 전환 설정 */
+  transition: visibility 0s 3s, opacity 3s ease-in-out; /* 5초 후에 천천히 나타나도록 전환 설정 */
 }
 /* .slide-area{
     width: 100%;

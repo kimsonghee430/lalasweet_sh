@@ -5,10 +5,10 @@ window.onload = function () {
     slideContainer.style.visibility = "visible";
     slideContainer.style.opacity = "1";
     slideContainer.style.transition = "opacity 0.4s ease";
-  }, 4200); // 5000ms = 5초
+  }, 3600); // 5000ms = 5초
 
   setTimeout(function () {
-    const image = document.querySelector(".character"); 
+    const image = document.querySelector(".character");
     image.style.display = "none";
   }, 4000);
 
@@ -19,7 +19,7 @@ window.onload = function () {
     speed: 3000,
     disableOnInteraction: false,
     freeMode: true, // 자유 모드 활성화, 슬라이드가 자연스럽게 이동
-    // freeModeMomentum: true, 
+    // freeModeMomentum: true,
     freeModeMomentumRatio: 0.5, // 관성 효과의 강도 조절
     slidesPerView: 2,
     spaceBetween: 30,
@@ -229,17 +229,17 @@ window.onload = function () {
 
   const buyB = document.querySelectorAll(".buyB");
   const menuSelect = document.querySelectorAll(".menu-select-area");
-  
+
   menuSelect.forEach((menu) => {
     // 초기 상태에서 모든 메뉴 항목 숨기기
     menu.style.display = "none";
   });
-  
+
   buyB.forEach((item, index) => {
     item.addEventListener("click", function () {
       // 현재 선택한 메뉴 항목의 display 상태를 확인
       const currentMenu = menuSelect[index];
-  
+
       if (currentMenu.style.display === "block") {
         // 현재 보이는 상태라면 숨기기
         currentMenu.style.display = "none";
@@ -254,16 +254,16 @@ window.onload = function () {
     });
   });
   // 굿즈 이미지 프리벤트 적용
-  const goodsImgA = document.querySelectorAll(".goods-img ul a")
-  goodsImgA.forEach(function (anchor){
+  const goodsImgA = document.querySelectorAll(".goods-img ul a");
+  goodsImgA.forEach(function (anchor) {
     anchor.addEventListener("click", function (event) {
       // href 속성이 '#'인지 확인
       if (anchor.getAttribute("href") === "#") {
         // 기본 동작을 막음
         event.preventDefault();
       }
-})
-})
+    });
+  });
 
   //  모든 a 태그를 선택
   var anchors = document.querySelectorAll("a");
@@ -279,38 +279,46 @@ window.onload = function () {
     });
   });
 
-  const signinBt = document.querySelector(".signinBt")
-  signinBt.addEventListener("click" , function(){
+  const signinBt = document.querySelector(".signinBt");
+  signinBt.addEventListener("click", function () {
+    alert("회원가입이 완료되었습니다.");
+    alert("쿠폰이 정상적으로 발급되었습니다.");
+  });
 
-    alert("회원가입이 완료되었습니다.")
-    alert("쿠폰이 정상적으로 발급되었습니다.")
+  const mb_menu = document.querySelector(".mb-nav")
+  const menubar = document.querySelector("#menubar")
+  menubar.addEventListener("click" , function(){
+    alert("gd")
+    mb_menu.style.display = "block"
+
   })
 
+
+
+
   // 프로덕트 영역 상품 수량조절
-  
-  // 수량 감소 함수
-  function decrease() {
-    var quantityInput = document.getElementById("quantity");
-    var currentValue = parseInt(quantityInput.value);
+  // function decrease() {
+  //   var quantityInput = document.getElementById("quantity");
+  //   var currentValue = parseInt(quantityInput.value);
 
-    if (currentValue > 1) {
-      quantityInput.value = currentValue - 1;
-    }
-  }
+  //   if (currentValue > 1) {
+  //     quantityInput.value = currentValue - 1;
+  //   }
+  // }
 
-  // 수량 증가 함수
-  function increase() {
-    var quantityInput = document.getElementById("quantity");
-    var currentValue = parseInt(quantityInput.value);
+  // function increase() {
+  //   var quantityInput = document.getElementById("quantity");
+  //   var currentValue = parseInt(quantityInput.value);
 
-    quantityInput.value = currentValue + 1;
-  }
+  //   quantityInput.value = currentValue + 1;
+  // }
 
-  // 이벤트 리스너 추가
-  const minus = document.querySelector("#minus");
-  const plus = document.querySelector("#plus");
+  // const minus = document.querySelectorAll(".minus")
+  // const plus = document.querySelectorAll(".plus")
 
-  minus.addEventListener("click", decrease); // decrease 함수 호출
-  plus.addEventListener("click", increase);  // increase 함수 호출
+  // minus.forEach((itemsMin)=>{
+  //   itemsMin[index]
+    
+  // })
 
 };

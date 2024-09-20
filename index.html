@@ -146,8 +146,16 @@
             </li>
           </ul>
           <a href="#" id="header_menu">
-            <img src="images/menu-bar.png" alt="메뉴바">
+            <img src="images/menu-bar.png" id="menubar" alt="메뉴바">
           </a>
+          <ul class="mb-nav">
+            <li>
+              <a href="login.html">로그인</a>
+            </li>
+            <li>
+              <a href="https://lalasweet.kr/">공식홈페이지</a>
+            </li>
+          </ul>
         </header>
         <!-- 배너 로고 -->
         <p class="banner-title">저당 아이스크림<br /><span>판매량 1위!</span></p>
@@ -219,10 +227,10 @@
             <!-- <img src="/images/lala_character/lala_character02.png" alt="" /> -->
           </div>
           <div class="character-in-cup1">
-            <img src="/lala_character/empty-cup.png" alt="" />
+            <img src="/lala_character/empty-cup.png" alt="캐릭터컵" />
           </div>
           <div class="character-in-cup2">
-            <img src="/lala_character/cup-in-character.png" alt="" />
+            <img src="/lala_character/cup-in-character.png" alt="캐릭터컵2" />
           </div>
         </div>
       </div>
@@ -232,7 +240,7 @@
           <li><a href="#product">PRODUCT</a></li>
           <li><a href="#event">EVENT</a></li>
           <li><a href="#goods">GOODS</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="faq.html" onclick="window.open('faq.html', '_blank', 'width=800,height=800'); return false;">FAQ</a></li>
         </ul>
       </div>
       <!-- 메인 -->
@@ -290,7 +298,8 @@
             <span data-aos="fade-up" data-aos-duration="900" class="color2">"330만 개"</span>
             <span data-aos="fade-up" data-aos-duration="900" class="color3">"440만 개"</span>
           </div>
-          <div data-aos="fade-right" data-aos-duration="900" class="output-news">
+          <!-- data-aos="fade-right" data-aos-duration="900"  -->
+          <div class="output-news">
             <p>
               기존 2년 간의 누적 판매량을 돌파!<br />
               2024년 현재, 출시 첫 달 대비 무려 <span class="color4">76배 증가!!</span><br />
@@ -386,9 +395,9 @@
                         <li><a href="#">오렌지&라즈베리</a></li>
                         <li><a href="#">애플민트</a></li>
                         <div class="quantity-container">
-                          <button class="quantity-btn" id="minus">-</button>
-                          <input type="number" id="quantity" value="1" min="1" readonly />
-                          <button class="quantity-btn" id="plus">+</button>
+                          <button class="quantity-btn minus" onclick="decrease()">-</button>
+                          <input type="number" id="quantity" value="1" min="1" />
+                          <button class="quantity-btn plus" onclick="increase()">+</button>
                         </div>
                         <button class="putIn">상품 담기</button>
                       </ul>
@@ -413,9 +422,9 @@
                         <li><a href="#">초콜릿</a></li>
                         <li><a href="#">말차</a></li>
                         <div class="quantity-container">
-                          <button class="quantity-btn" onclick="decrease()">-</button>
+                          <button class="quantity-btn minus" onclick="decrease()">-</button>
                           <input type="number" id="quantity" value="1" min="1" />
-                          <button class="quantity-btn" onclick="increase()">+</button>
+                          <button class="quantity-btn plus" onclick="increase()">+</button>
                         </div>
                         <button class="putIn">상품 담기</button>
                       </ul>
@@ -436,9 +445,9 @@
                       <ul class="menu-select">
                         <li><a href="#">메론바</a></li>
                         <div class="quantity-container">
-                          <button class="quantity-btn" onclick="decrease()">-</button>
+                          <button class="quantity-btn minus" onclick="decrease()">-</button>
                           <input type="number" id="quantity" value="1" min="1" />
-                          <button class="quantity-btn" onclick="increase()">+</button>
+                          <button class="quantity-btn plus" onclick="increase()">+</button>
                         </div>
                         <button class="putIn">상품 담기</button>
                       </ul>
@@ -462,9 +471,9 @@
                         <li><a href="#">초콜릿</a></li>
                         <li><a href="#">생우유</a></li>
                         <div class="quantity-container">
-                          <button class="quantity-btn" onclick="decrease()">-</button>
+                          <button class="quantity-btn minus" onclick="decrease()">-</button>
                           <input type="number" id="quantity" value="1" min="1" />
-                          <button class="quantity-btn" onclick="increase()">+</button>
+                          <button class="quantity-btn plus" onclick="increase()">+</button>
                         </div>
                         <button class="putIn">상품 담기</button>
                       </ul>
@@ -489,9 +498,9 @@
                         <li><a href="#">생우유</a></li>
                         <li><a href="#">팥</a></li>
                         <div class="quantity-container">
-                          <button class="quantity-btn" onclick="decrease()">-</button>
+                          <button class="quantity-btn minus" onclick="decrease()">-</button>
                           <input type="number" id="quantity" value="1" min="1" />
-                          <button class="quantity-btn" onclick="increase()">+</button>
+                          <button class="quantity-btn plus" onclick="increase()">+</button>
                         </div>
                         <button class="putIn">상품 담기</button>
                       </ul>
@@ -514,9 +523,9 @@
                         <li><a href="#">밀크 쉐이크</a></li>
                         <li><a href="#">망고 쉐이크</a></li>
                         <div class="quantity-container">
-                          <button class="quantity-btn" onclick="decrease()">-</button>
+                          <button class="quantity-btn minus" onclick="decrease()">-</button>
                           <input type="number" id="quantity" value="1" min="1" />
-                          <button class="quantity-btn" onclick="increase()">+</button>
+                          <button class="quantity-btn plus" onclick="increase()">+</button>
                         </div>
                         <button class="putIn">상품 담기</button>
                       </ul>
@@ -539,9 +548,9 @@
                         <li><a href="#">카페 라떼</a></li>
                         <li><a href="#">바닐라 라떼</a></li>
                         <div class="quantity-container">
-                          <button class="quantity-btn" onclick="decrease()">-</button>
+                          <button class="quantity-btn minus" onclick="decrease()">-</button>
                           <input type="number" id="quantity" value="1" min="1" />
-                          <button class="quantity-btn" onclick="increase()">+</button>
+                          <button class="quantity-btn plus" onclick="increase()">+</button>
                         </div>
                         <button class="putIn">상품 담기</button>
                       </ul>
@@ -563,9 +572,9 @@
                         <li><a href="#">초코 우유</a></li>
                         <li><a href="#">바나나 우유</a></li>
                         <div class="quantity-container">
-                          <button class="quantity-btn" onclick="decrease()">-</button>
+                          <button class="quantity-btn minus" onclick="decrease()">-</button>
                           <input type="number" id="quantity" value="1" min="1" />
-                          <button class="quantity-btn" onclick="increase()">+</button>
+                          <button class="quantity-btn plus" onclick="increase()">+</button>
                         </div>
                         <button class="putIn">상품 담기</button>
                       </ul>
