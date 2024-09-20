@@ -53,7 +53,7 @@
         }
   
   
-        label{
+    label{
     display: block;
     /* background-color: blueviolet; */
     width: 100px;
@@ -63,18 +63,25 @@
     font-weight: bold;
     border: 2px solid #333;
     background-color: #fff;
-    font-size: 1rem;
-    text-align: right;
-    padding-right: 10px;
+    font-size: 14px;
+    text-align: center;
+    padding: 3px;
+    cursor: pointer;
+    /* padding-right: 10px; */
     /* margin-right: 20px; */
     /* font-family: "Noto Sans KR", sans-serif; */
     
+  }
+
+  .menu-select br{
+    /* display: none; */
   }
   
   .sideItem{
     font-size: 15px;
     font-weight: bold;
     color: navy;
+    margin: 4px;
   }
 
   .sand{
@@ -82,10 +89,21 @@
   }
 
   .total-container{
+    width: 300px;
     position: fixed;
-    display: absolute;
-    bottom: 0;
-    left: 0;
+    display: flex;
+    flex-direction: column;
+    bottom: 10px;
+    left: 10px;
     z-index: 9999999;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #333;
+    background-color: #fff;
     /* padding: 50%; */
   }
+
+  /* 체크박스 숨기기 */
+input[type="checkbox"] {
+  display: none;
+}
