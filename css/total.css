@@ -90,11 +90,11 @@
 
   .total-container{
     width: 300px;
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     flex-direction: column;
-    bottom: 10px;
-    left: 10px;
+    /* bottom: 10px;
+    left: 10px; */
     z-index: 9999999;
     padding: 20px;
     border-radius: 8px;

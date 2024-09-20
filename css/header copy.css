@@ -519,4 +519,18 @@ body {
   .character-in-cup2 {
     display: none;
   }
+
 }
+
+@media screen and (max-width: 457px){
+  
+  .menu-nav li {
+    margin: 7px 10px !important;
+  }
+  
+  .menu-nav li a {
+
+  font-size: 2.3rem;
+  }
+}
+

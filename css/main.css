@@ -65,29 +65,39 @@ html{
   }
 
   /* gotop (장바구니기능 )*/
+.fixed-area{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 10px;
+  left: 10px;
+  gap: 10px;
+  z-index: 99999999;
+}
+
   .gotop-bag {
     /* display: none; */
     
-    position: fixed;
+    /* position: fixed; */
     /* display: contents; */
     transition: all 1s;
     /* width: 100px;
     height: 100px; */
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     /* border: 10px solid #ff8080; */
   }
   .gotop-bag a{
     width: 100%;
     height: 100%;
-    background: #fff;
+    /* background: #fff; */
   }
 
   .gotop-bag a img {
-    position: fixed;
+    /* position: fixed; */
     /* color: #a53be2; */
-    left: 20px;
-    bottom: 300px;
-    z-index: 999999;
+    /* left: 20px;
+    bottom: 300px; */
+    z-index: 99999;
     /* width: 100px;
     height: 100px; */
     width: 14%;
