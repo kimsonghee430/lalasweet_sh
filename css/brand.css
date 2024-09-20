@@ -646,8 +646,8 @@
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  opacity: 0; /* 초기 상태는 투명함 */
-  transition: opacity 1s ease-in-out; /* 부드러운 전환 설정 */
+  /* opacity: 0; 
+  transition: opacity 1s ease-in-out;  */
 }
 
 .output-news.show {
