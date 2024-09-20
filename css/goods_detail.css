@@ -1,0 +1,339 @@
+@charset "utf-8";
+/* 메인 이미지 */
+.main-img {
+  width: 100%;
+}
+.main-img img {
+  width: 80%;
+  border-radius: 10%;
+}
+/* 상품 이름, 가격 */
+.main-letter {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.main-letter h2 {
+  font-size: 70px;
+  font-weight: 100;
+  font-family: "Jua", sans-serif;
+  color: #cfcfcf;
+}
+.main-letter p {
+  color: #fff;
+  padding-bottom: 50px;
+  font-size: 65px;
+  font-weight: 400;
+  border-bottom: 2px solid #eeeded;
+  font-family: "Jua", sans-serif;
+}
+/* 수량버튼 */
+.count-wrap {
+  width: 100%;
+  margin: 30px;
+}
+.count-wrap p {
+  font-size: 60px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.count-wrap .minus {
+  font-size: 70px;
+  width: 100px;
+  border-radius: 50px;
+}
+.count-wrap .plus {
+  font-size: 70px;
+  width: 100px;
+  border-radius: 50px;
+}
+.count-wrap .inp {
+  font-size: 80px;
+  width: 100px;
+  border: none;
+  text-align: center;
+}
+/* 버튼 */
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.button button {
+  width: 50%;
+  font-size: 60px;
+  margin: 20px;
+}
+.button .cartBt {
+  float: left;
+  color: white;
+  background-color: black;
+}
+.button .buyBt {
+  background-color: white;
+}
+/* 디테일 컷 */
+.detailCut {
+  margin-top: 200px;
+  width: 100%;
+}
+.detailCut h2 {
+  text-align: center;
+  font-size: 90px;
+}
+.detailCut img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+/* 사이즈 */
+.size {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  width: 100%;
+  text-align: center;
+}
+.size h2 {
+  font-size: 80px;
+}
+.size p {
+  font-size: 60px;
+}
+
+/* 반응형 */
+@media screen and (max-width: 950px) {
+  .main-letter h2 {
+    font-size: 90px;
+  }
+  .main-letter p {
+    font-size: 85px;
+  }
+  .count-wrap p {
+    font-size: 55px;
+  }
+  .count-wrap .minus {
+    font-size: 80px;
+    width: 100px;
+  }
+  .count-wrap .plus {
+    font-size: 80px;
+    width: 100px;
+  }
+  .count-wrap .inp {
+    font-size: 75px;
+  }
+  .button button {
+    font-size: 50px;
+  }
+  .detailCut h2 {
+    font-size: 80px;
+  }
+  .size h2 {
+    font-size: 75px;
+  }
+  .size p {
+    font-size: 55px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .main-letter h2 {
+    font-size: 80px;
+  }
+  .main-letter p {
+    font-size: 75px;
+  }
+  .count-wrap p {
+    font-size: 50px;
+  }
+  .count-wrap .minus,
+  .count-wrap .plus {
+    font-size: 70px;
+    width: 90px;
+  }
+  .count-wrap .inp {
+    font-size: 70px;
+  }
+  .button button {
+    font-size: 45px;
+  }
+  .detailCut h2 {
+    font-size: 70px;
+  }
+  .size h2 {
+    font-size: 65px;
+  }
+  .size p {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-letter {
+    margin-bottom: 60px;
+  }
+  .main-letter h2 {
+    font-size: 70px;
+  }
+  .main-letter p {
+    font-size: 68px;
+  }
+  .count-wrap p {
+    font-size: 45px;
+  }
+  .count-wrap .minus,
+  .count-wrap .plus {
+    font-size: 60px;
+    width: 80px;
+  }
+  .count-wrap .inp {
+    font-size: 65px;
+  }
+  .button button {
+    font-size: 40px;
+  }
+  .detailCut h2 {
+    font-size: 65px;
+  }
+  .size h2 {
+    font-size: 55px;
+  }
+  .size p {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-letter {
+    margin-bottom: 50px;
+  }
+  .main-letter h2 {
+    font-size: 55px;
+  }
+  .main-letter p {
+    font-size: 50px;
+  }
+  .count-wrap p {
+    font-size: 38px;
+  }
+  .count-wrap .minus,
+  .count-wrap .plus {
+    font-size: 50px;
+    width: 70px;
+  }
+  .count-wrap .inp {
+    font-size: 55px;
+  }
+  .button button {
+    font-size: 32px;
+  }
+  .detailCut h2 {
+    font-size: 55px;
+  }
+  .size h2 {
+    font-size: 48px;
+  }
+  .size p {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .main-letter {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .main-letter h2 {
+    font-size: 35px;
+    padding: 0 0 0 15px;
+  }
+  .main-letter p {
+    font-size: 32px;
+    padding: 0 0 20px 15px;
+  }
+  .count-wrap {
+    margin: 18px;
+  }
+  .count-wrap p {
+    font-size: 25px;
+  }
+  .count-wrap .minus,
+  .count-wrap .plus {
+    font-size: 30px;
+    width: 40px;
+  }
+  .count-wrap .inp {
+    font-size: 35px;
+    width: 40px;
+  }
+  .button button {
+    font-size: 20px;
+  }
+  .detailCut {
+    margin-top: 100px;
+  }
+  .detailCut h2 {
+    font-size: 45px;
+  }
+  .detailCut img {
+    margin-top: 80px;
+  }
+  .size {
+    margin-top: 90px;
+    margin-bottom: 100px;
+  }
+  .size h2 {
+    font-size: 30px;
+  }
+  .size p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main-letter {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .main-letter h2 {
+    font-size: 32px;
+    padding: 0 0 0 10px;
+  }
+  .main-letter p {
+    font-size: 28px;
+    padding: 0 0 20px 10px;
+  }
+  .count-wrap {
+    margin: 18px;
+  }
+  .count-wrap p {
+    font-size: 25px;
+  }
+  .count-wrap .minus,
+  .count-wrap .plus {
+    font-size: 30px;
+    width: 40px;
+  }
+  .count-wrap .inp {
+    font-size: 35px;
+    width: 40px;
+  }
+  .button button {
+    font-size: 20px;
+  }
+  .detailCut {
+    margin-top: 100px;
+  }
+  .detailCut h2 {
+    font-size: 45px;
+  }
+  .detailCut img {
+    margin-top: 80px;
+  }
+  .size {
+    margin-top: 90px;
+    margin-bottom: 100px;
+  }
+  .size h2 {
+    font-size: 30px;
+  }
+  .size p {
+    font-size: 18px;
+  }
+}
