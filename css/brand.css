@@ -306,6 +306,14 @@
   margin-bottom: 10px;
 }
 
+.brand-intro span strong{
+  color: rgb(255, 199, 232);
+  font-size: 28px;
+  font-weight: lighter;
+}
+
+
+
 /* 반응형(브랜드 소개영역) */
 @media screen and (max-width: 1110px) {
   .brand {
@@ -603,20 +611,20 @@
   /* margin: 20px; */
 }
 
+
 .brand-output img {
   display: block;
   width: 100%; /* 화면 크기에 맞게 조정 */
 }
 
-.color1,
-.color2,
-.color3 {
+.brand-image-output .color1,
+.brand-image-output .color2,
+.brand-image-output .color3 {
   position: absolute;
   font-size: 1.8vw; /* 화면 크기에 맞게 조정 */
   font-weight: bold;
   font-family: "Jua", sans-serif;
-  opacity: 0; /* 초기 상태는 투명함 */
-  transition: opacity 1s ease-in-out; /* 부드러운 전환 설정 */
+
 }
 
 .color1 {
@@ -639,6 +647,24 @@
   bottom: 70%;
   transform: translate(-50%, 50%); /* 정중앙으로 위치 조정 */
 }
+
+.brand-image-output2{
+  display: none;
+}
+
+.brand-image-output2 .color1,
+.brand-image-output2 .color2,
+.brand-image-output2 .color3 {
+  display: none;
+  position: absolute;
+  font-size: 2vw; /* 화면 크기에 맞게 조정 */
+  font-weight: bold;
+  font-family: "Jua", sans-serif;
+  /* opacity: 0;  */
+  /* transition: opacity 1s ease-in-out;  */
+  
+}
+
 
 .show {
   opacity: 1; /* 클래스가 추가되면 보이도록 설정 */
@@ -690,9 +716,9 @@
     width: 100%;
     height: auto;
   }
-  .color1,
-  .color2,
-  .color3 {
+  .brand-image-output .color1,
+  .brand-image-output .color2,
+  .brand-image-output .color3 {
     font-size: 2.7vw;
   }
 
@@ -701,7 +727,54 @@
   }
 
 }
+
+
+@media screen and (max-width: 768px) {
+  .brand-image-output {
+    display: none;
+  }
+  .brand-image-output .color1,
+  .brand-image-output .color2,
+  .brand-image-output .color3 {
+    display: none;
+  }
+  
+  .brand-image-output2{
+    width: 80%;
+    height: auto;
+    display: block;
+    position: relative;
+  }
+  .brand-image-output2 img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .brand-image-output2 .color1,
+  .brand-image-output2 .color2,
+  .brand-image-output2 .color3 {
+    display: block;
+    position: absolute;
+    font-size: 2.8vw; /* 화면 크기에 맞게 조정 */
+    font-weight: bold;
+    font-family: "Jua", sans-serif;
+
+
+  }
+
+
+
+}
 @media screen and (max-width: 700px) {
+  .output-news p {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .brand-image-output2 {
+    width: 95%;
+  }
   .output-news p {
     font-size: 3.5vw;
   }
