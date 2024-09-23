@@ -133,6 +133,8 @@ input{
     font-family: "Noto Sans KR", sans-serif;
     letter-spacing: 1px;
     cursor: pointer;
+    font-size: 16px;
+    
 }
 
 .signinBt:hover{

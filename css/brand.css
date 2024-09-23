@@ -592,6 +592,7 @@
   background-color: rgb(255, 255, 255);
   border-radius: 25px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .brand-image-output {
@@ -599,6 +600,7 @@
   position: relative;
   width: 65%; /* 화면 크기에 맞게 조정 */
   height: auto;
+  /* margin: 20px; */
 }
 
 .brand-output img {
@@ -657,10 +659,10 @@
 .output-news p {
   width: 100%;
   font-family: "Jua", sans-serif;
-  font-size: 2vw;
+  font-size: 2.3vw;
   line-height: 1.8;
   padding: 10px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   color: #333;
   opacity: 1; /* 이 속성은 .show 클래스로 변경하지 않습니다. */
 }
@@ -695,11 +697,21 @@
   }
 
   .output-news p {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
 
 }
 @media screen and (max-width: 700px) {
+  .output-news p {
+    font-size: 3.5vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .output-news p {
+    font-size: 3.7vw;
+  }
+}
+@media screen and (max-width: 350px) {
   .output-news p {
     font-size: 3.5vw;
   }
