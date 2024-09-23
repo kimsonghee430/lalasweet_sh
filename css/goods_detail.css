@@ -52,6 +52,7 @@
   width: 100px;
   border: none;
   text-align: center;
+  border-radius: 50px;
 }
 /* 버튼 */
 .button {
@@ -86,7 +87,7 @@
   font-size: 90px;
 }
 .detailCut img {
-  width: 80%;
+  width: 70%;
   display: block;
   margin: 0 auto;
   margin-top: 100px;
@@ -98,147 +99,13 @@
   width: 100%;
   text-align: center;
 }
-.size h2 {
-  font-size: 80px;
-}
 .size p {
-  font-size: 60px;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 /* 반응형 */
-@media screen and (max-width: 950px) {
-  .main-letter h2 {
-    font-size: 90px;
-  }
-  .main-letter p {
-    font-size: 85px;
-  }
-  .count-wrap p {
-    font-size: 55px;
-  }
-  .count-wrap .minus {
-    font-size: 80px;
-    width: 100px;
-  }
-  .count-wrap .plus {
-    font-size: 80px;
-    width: 100px;
-  }
-  .count-wrap .inp {
-    font-size: 75px;
-  }
-  .button button {
-    font-size: 50px;
-  }
-  .detailCut h2 {
-    font-size: 80px;
-  }
-  .size h2 {
-    font-size: 75px;
-  }
-  .size p {
-    font-size: 55px;
-  }
-}
-@media screen and (max-width: 750px) {
-  .main-letter h2 {
-    font-size: 80px;
-  }
-  .main-letter p {
-    font-size: 75px;
-  }
-  .count-wrap p {
-    font-size: 50px;
-  }
-  .count-wrap .minus,
-  .count-wrap .plus {
-    font-size: 70px;
-    width: 90px;
-  }
-  .count-wrap .inp {
-    font-size: 70px;
-  }
-  .button button {
-    font-size: 45px;
-  }
-  .detailCut h2 {
-    font-size: 70px;
-  }
-  .size h2 {
-    font-size: 65px;
-  }
-  .size p {
-    font-size: 45px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .main-letter {
-    margin-bottom: 60px;
-  }
-  .main-letter h2 {
-    font-size: 70px;
-  }
-  .main-letter p {
-    font-size: 68px;
-  }
-  .count-wrap p {
-    font-size: 45px;
-  }
-  .count-wrap .minus,
-  .count-wrap .plus {
-    font-size: 60px;
-    width: 80px;
-  }
-  .count-wrap .inp {
-    font-size: 65px;
-  }
-  .button button {
-    font-size: 40px;
-  }
-  .detailCut h2 {
-    font-size: 65px;
-  }
-  .size h2 {
-    font-size: 55px;
-  }
-  .size p {
-    font-size: 38px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .main-letter {
-    margin-bottom: 50px;
-  }
-  .main-letter h2 {
-    font-size: 55px;
-  }
-  .main-letter p {
-    font-size: 50px;
-  }
-  .count-wrap p {
-    font-size: 38px;
-  }
-  .count-wrap .minus,
-  .count-wrap .plus {
-    font-size: 50px;
-    width: 70px;
-  }
-  .count-wrap .inp {
-    font-size: 55px;
-  }
-  .button button {
-    font-size: 32px;
-  }
-  .detailCut h2 {
-    font-size: 55px;
-  }
-  .size h2 {
-    font-size: 48px;
-  }
-  .size p {
-    font-size: 30px;
-  }
-}
+
 @media screen and (max-width: 375px) {
   .main-letter {
     margin-top: 10px;
@@ -257,6 +124,7 @@
   }
   .count-wrap p {
     font-size: 25px;
+    text-align: center;
   }
   .count-wrap .minus,
   .count-wrap .plus {
@@ -305,9 +173,11 @@
   }
   .count-wrap {
     margin: 18px;
+    text-align: center;
   }
   .count-wrap p {
     font-size: 25px;
+    text-align: center;
   }
   .count-wrap .minus,
   .count-wrap .plus {
