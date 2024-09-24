@@ -291,6 +291,7 @@
   font-style: normal;
   font-size: 3.8rem;
   color: rgb(235, 167, 167);
+  text-shadow: 2px 2px 2px rgba(56, 56, 56, 0.3);
   padding: 20px 0;
 }
 .brand-intro span {
@@ -417,6 +418,10 @@
     font-style: normal;
     font-size: 2.7rem;
   }
+
+  .brand-intro span strong{
+    font-size: 32px;
+  }
 }
 @media screen and (max-width: 610px) {
   .brand {
@@ -486,6 +491,10 @@
   .brand-intro br {
     display: none;
   }
+
+  .brand-intro span strong{
+    font-size: 30px;
+  }
 }
 @media screen and (max-width: 460px) {
   .brand {
@@ -517,6 +526,7 @@
     font-style: normal;
     font-size: 2.4rem;
   }
+
 }
 @media screen and (max-width: 437px) {
   .brand {
@@ -549,6 +559,10 @@
     font-style: normal;
     font-size: 2.1rem;
   }
+
+  .brand-intro span strong{
+    font-size: 28px;
+  }
 }
 @media screen and (max-width: 360px) {
   .brand {
@@ -579,6 +593,10 @@
     font-family: "Jua", sans-serif;
     font-style: normal;
     font-size: 1.8rem;
+  }
+
+  .brand-intro span strong{
+    font-size: 23px;
   }
 }
 @media screen and (max-width: 320px) {
