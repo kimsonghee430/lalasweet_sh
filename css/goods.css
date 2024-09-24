@@ -121,14 +121,16 @@ a:hover .overlay {
   background-color: #fff;
   border-radius: 20px;
   border-color: #fff;
+  /* border: none; */
   color: #016ed5;
   font-size: 2rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 10px 20px;
   margin: 25px auto;
   display: block;
   width: 200px;
   height: auto;
+  font-family: "Jua", sans-serif;
 }
 .goodsBtn a{
   color: #016ed5;
