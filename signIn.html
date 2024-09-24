@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/signIn.css">
+    <link rel="stylesheet" href="css/signIn.css" />
     <script src="js/signin.js"></script>
-    
+
     <title>[Lalasweet]Signin Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrap">
-        <a href="index.html" class="logo">
-            <img src="/images/logo_red_24.png" alt="로고" id="login_logo">
-            <!-- <img src="/images/lala_character/lala_character02.png" alt="" id="login_chara"> -->
-        </a>
-        <form class="form">
-            <fieldset>
-                <h2>회원가입</h2>
-                <div class="signin-area">
-                    <div class="input-area">
-                        <label for="userPassword">이름</label>
-                        <input type="text" id="name" value="">
-                    </div>
-                    <div class="input-area">
-                        <label for="userId">아이디 / 이메일</label>
-                        <input type="text" id="userId">
-                    </div>
-                    <div class="input-area">
-                        <label for="userPassword">비밀번호 </label>
-                        <input type="password" id="userPassword" value="">
-                    </div>
-                    <div class="input-area">
-                        <label for="userPassword">비밀번호 확인</label>
-                        <input type="password" id="userPassword" value="">
-                    </div>
-                    <div class="input-area">
-                        <label for="userPassword">전화번호</label>
-                        <input type="number" id="phone" value="">
-                    </div>
-                    <button type="submit" class="signinBt">가입하기</button>
-                    <div class="sign_find">
-                        <a href="#" class="findID">아이디/비밀번호 찾기</a>
-                    </div>
-                </div>
-            </fieldset>
-        </form>
+      <a href="index.html" class="logo">
+        <img src="/images/logo_red_24.png" alt="로고" id="login_logo" />
+        <!-- <img src="/images/lala_character/lala_character02.png" alt="" id="login_chara"> -->
+      </a>
+      <form class="form" name="form">
+        <fieldset>
+          <h2>회원가입</h2>
+          <div class="signin-area">
+            <div class="input-area">
+              <label for="userName">이름</label>
+              <input type="text" id="name" name="userName" />
+            </div>
+            <div class="input-area">
+              <label for="userId">아이디 / 이메일</label>
+              <input type="text" id="userId" name="userId" />
+            </div>
+            <div class="input-area">
+              <label for="userPassword">비밀번호 </label>
+              <input type="password" id="userPassword" name="userPassword" />
+            </div>
+            <div class="input-area">
+              <label for="userPasswordC">비밀번호 확인</label>
+              <input type="password" id="userPasswordC" name="userPasswordC" />
+            </div>
+            <div class="input-area">
+              <label for="userPhone">전화번호</label>
+              <input type="tel" id="phone" name="userPhone" />
+            </div>
+            <div class="input-area">
+              <label for="userAdd">주소</label>
+              <input type="text" id="address" name="userAdd" />
+            </div>
+            <button type="submit" class="signinBt">가입하기</button>
+            <!-- <button type="button" onclick="cancelForm()">취소</button> -->
+            <div class="sign_find">
+              <a href="#" class="findID">아이디/비밀번호 찾기</a>
+            </div>
+          </div>
+        </fieldset>
+      </form>
     </div>
-</body>
+  </body>
 </html>
