@@ -91,6 +91,7 @@
 }
 .detailCut img {
   width: 50%;
+  min-width: 300px;
   display: block;
   margin: 0 auto;
   margin-top: 100px;
@@ -108,111 +109,137 @@
 }
 
 /* 반응형 */
-
-@media screen and (max-width: 375px) {
-  .main-letter {
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-  .main-letter h2 {
-    font-size: 35px;
-    padding: 0 0 0 15px;
-  }
-  .main-letter p {
-    font-size: 32px;
-    padding: 0 0 20px 15px;
-  }
-  .count-wrap {
-    margin: 18px;
-  }
-  .count-wrap p {
-    font-size: 25px;
-    text-align: center;
-  }
-  .count-wrap .minus,
-  .count-wrap .plus {
-    font-size: 30px;
-    width: 40px;
-  }
-  .count-wrap .inp {
-    font-size: 35px;
-    margin: 10px;
-    width: 40px;
-  }
-  .button button {
-    font-size: 20px;
-  }
-  .detailCut {
-    margin-top: 100px;
-  }
-  .detailCut h2 {
-    font-size: 45px;
-  }
-  .detailCut img {
-    margin-top: 80px;
-  }
-  .size {
-    margin-top: 90px;
-    margin-bottom: 100px;
-  }
-  .size h2 {
-    font-size: 30px;
-  }
-  .size p {
-    font-size: 18px;
-  }
+@media screen and (max-width: 500px) {
+/* 상품 이름, 가격 */
+.main-letter {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+  border-bottom: 2px solid #eeeded;
+  font-family: "Jua", sans-serif;
 }
-@media screen and (max-width: 320px) {
-  .main-letter {
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-  .main-letter h2 {
-    font-size: 32px;
-    padding: 0 0 0 10px;
-  }
-  .main-letter p {
-    font-size: 28px;
-    padding: 0 0 20px 10px;
-  }
-  .count-wrap {
-    margin: 18px;
-    text-align: center;
-  }
-  .count-wrap p {
-    font-size: 25px;
-    text-align: center;
-  }
-  .count-wrap .minus,
-  .count-wrap .plus {
-    font-size: 30px;
-    width: 40px;
-  }
-  .count-wrap .inp {
-    font-size: 35px;
-    width: 40px;
-    margin: 10px;
-  }
-  .button button {
-    font-size: 20px;
-  }
-  .detailCut {
-    margin-top: 100px;
-  }
-  .detailCut h2 {
-    font-size: 45px;
-  }
-  .detailCut img {
-    margin-top: 80px;
-  }
-  .size {
-    margin-top: 90px;
-    margin-bottom: 100px;
-  }
-  .size h2 {
-    font-size: 30px;
-  }
-  .size p {
-    font-size: 18px;
-  }
+.main-letter p {
+  color: #fff;
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+}
+/* 수량버튼 */
+.count-wrap {
+  width: 90%;
+  font-family: "Jua", sans-serif;
+  text-align: center;
+}
+.count-wrap p {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.count-wrap .minus {
+  font-size: 40px;
+  width: 100px;
+  border-radius: 50px;
+}
+.count-wrap .plus {
+  font-size: 40px;
+  width: 100px;
+  border-radius: 50px;
+}
+.count-wrap .inp {
+  font-size: 40px;
+  width: 100px;
+  border: none;
+  text-align: center;
+  border-radius: 50px;
+  margin: 10px;
+}
+/* 버튼 */
+.button button {
+  width: 30%;
+  font-size: 35px;
+  margin: 20px;
+}
+.button .cartBt {
+  float: left;
+  color: white;
+  background-color: black;
+  font-family: "Jua", sans-serif;
+}
+/* 디테일 컷 */
+.detailCut {
+  margin-top: 150px;
+  width: 100%;
+  font-family: "Jua", sans-serif;
+}
+.detailCut h2 {
+  text-align: center;
+  font-size: 60px;
+}
+}
+
+@media screen and (max-width: 396px) {
+  /* 상품 이름, 가격 */
+.main-letter p {
+  color: #fff;
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+}
+/* 수량버튼 */
+.count-wrap {
+  width: 84%;
+  font-family: "Jua", sans-serif;
+}
+.count-wrap p {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.count-wrap .minus {
+  font-size: 40px;
+  width: 80px;
+  border-radius: 50px;
+}
+.count-wrap .plus {
+  font-size: 40px;
+  width: 80px;
+  border-radius: 50px;
+}
+.count-wrap .inp {
+  font-size: 35px;
+  width: 80px;
+  border: none;
+  text-align: center;
+  border-radius: 50px;
+  margin: 10px;
+}
+/* 버튼 */
+.button button {
+  width: 30%;
+  font-size: 25px;
+  margin: 20px;
+}
+.button .cartBt {
+  float: left;
+  color: white;
+  background-color: black;
+  font-family: "Jua", sans-serif;
+}
+/* 디테일 컷 */
+.detailCut {
+  margin-top: 100px;
+  width: 100%;
+  font-family: "Jua", sans-serif;
+}
+.detailCut h2 {
+  text-align: center;
+  font-size: 60px;
+}
+.size p {
+  font-size: 25px;
+  font-weight: 700;
+}
 }
