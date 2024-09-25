@@ -4,9 +4,9 @@
   width: 100%;
 }
 .main-img img {
-  width: 50%;
+  width: 40%;
   border-radius: 30%;
-  transform: translateX(53%);
+  transform: translateX(74%);
 }
 /* 상품 이름, 가격 */
 .main-letter {
@@ -22,6 +22,7 @@
   padding-bottom: 40px;
   font-size: 45px;
   font-weight: 100;
+  text-align: center;
   /* border-bottom: 2px solid #eeeded; */
   /* font-family: "Jua", sans-serif; */
 }
@@ -36,6 +37,7 @@
   font-size: 50px;
   margin-bottom: 30px;
   color: #fff;
+  text-align: center;
 }
 .count-wrap .minus {
   font-size: 50px;
@@ -53,6 +55,7 @@
   border: none;
   text-align: center;
   border-radius: 50px;
+  margin: 10px;
 }
 /* 버튼 */
 .button {
@@ -62,7 +65,7 @@
   font-family: "Jua", sans-serif;
 }
 .button button {
-  width: 50%;
+  width: 30%;
   font-size: 40px;
   margin: 20px;
 }
@@ -87,7 +90,7 @@
   font-size: 90px;
 }
 .detailCut img {
-  width: 70%;
+  width: 50%;
   display: block;
   margin: 0 auto;
   margin-top: 100px;
@@ -133,6 +136,7 @@
   }
   .count-wrap .inp {
     font-size: 35px;
+    margin: 10px;
     width: 40px;
   }
   .button button {
@@ -187,6 +191,7 @@
   .count-wrap .inp {
     font-size: 35px;
     width: 40px;
+    margin: 10px;
   }
   .button button {
     font-size: 20px;
