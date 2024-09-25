@@ -713,7 +713,8 @@
 }
 
 .color4 {
-  color: rgb(0, 2, 134);
+  color: rgb(72, 75, 255);
+  text-shadow: 2px 2px 5px rgba(56, 56, 56, 0.3);
 }
 
 /* 반응형(브랜드 매출 영역) */
